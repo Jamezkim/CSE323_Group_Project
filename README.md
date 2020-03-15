@@ -17,9 +17,7 @@ Unless people go to a laundromat physically, they do not know the availability o
 
 ## 4. Existing Solutions Linking to Users:
 
-1) laundromat with cafe. <br />
-
-It allows customers to spend pleasant time in the laundromat by integrating with a cafe. <br />
+1) laundromat with cafe.<br />It allows customers to spend pleasant time in the laundromat by integrating with a cafe. <br />
 2) Also, some laundromats are located in a multi-complex where other entertainments, such as arcade or coin karaoke, are available  for people to spend time.
 
 ## 5. Plan to Research:
@@ -27,15 +25,15 @@ There are many efficient apartments (apartments for a single householder) nearby
 
 ## COMMAND LINE FOR USING GIT
 When you push,<br />
-    git branch //This confirms that you are now working on your new branch<br /><br />
-    1-1 git checkout -b “(your branch name (ex) Alex, Alex-dev)” // to make your branch<br /><br />
-    git status<br /><br />
-    git add -A<br /><br />
-    git commit -m "Your commit message"<br /><br />
-    git push origin urName-dev<br /><br />
-When you pull,<br />
-   git checkout master<br /><br />
-   git pull origin master<br /><br />
-   git checkout urName-dev<br /><br />
-   git merge master<br /><br />
+    1. git branch //This confirms that you are now working on your new branch<br /><br />
+    1-1 git checkout -b “(your branch name (ex) Alex Alex-dev)” // to make your branch<br /><br />
+    2. git status<br /><br />
+    3. git add -A<br /><br />
+    4. git commit -m "Your commit message"<br /><br />
+    5. git push origin urName-dev<br /><br />
+When you pull,<br /><br />
+   1. git checkout master<br /><br />
+   2. git pull origin master<br /><br />
+   3. git checkout urName-dev<br /><br />
+   4. git merge master<br /><br />
 
