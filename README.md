@@ -17,8 +17,8 @@ Unless people go to a laundromat physically, they do not know the availability o
 
 ## 4. Existing Solutions Linking to Users:
 
-1) laundromat with cafe.<br />It allows customers to spend pleasant time in the laundromat by integrating with a cafe. <br />
-2) Also, some laundromats are located in a multi-complex where other entertainments, such as arcade or coin karaoke, are available  for people to spend time.
+1) Laundromat that integrated with a cafe allows customers to spend pleasant time. <br />
+2) Some laundromats are located in a multi-complex where other entertainments, such as arcade or coin karaoke, are available  for people to spend time.
 
 ## 5. Plan to Research:
 There are many efficient apartments (apartments for a single householder) nearby IGC campus that have a laundromat in the lobby. (For example, Honesta, The Sharp Central City, and Homeplus laundromat) We will conduct surveys and interview people who frequently use the laundromat to research their main needs and inconvenience of using it. Additionally, we will interview laundromat owners to see their perspective of our designed software to ascertain whether the software will help customers as well as increase the owner’s profit by using it. For the survey and interview, we will mainly focus on the laundromat user’s needs and inconvenience and also the possibility of whether our designed software will help them to solve the current problems.
