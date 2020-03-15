@@ -24,14 +24,15 @@ Unless people go to a laundromat physically, they do not know the availability o
 There are many efficient apartments (apartments for a single householder) nearby IGC campus that have a laundromat in the lobby. (For example, Honesta, The Sharp Central City, and Homeplus laundromat) We will conduct surveys and interview people who frequently use the laundromat to research their main needs and inconvenience of using it. Additionally, we will interview laundromat owners to see their perspective of our designed software to ascertain whether the software will help customers as well as increase the owner’s profit by using it. For the survey and interview, we will mainly focus on the laundromat user’s needs and inconvenience and also the possibility of whether our designed software will help them to solve the current problems.
 
 ## COMMAND LINE FOR USING GIT
-When you push,<br /><br />
+###When you push,<br /><br />
    1. git branch //This confirms that you are now working on your new branch<br /><br />
     1-1 git checkout -b “(your branch name (ex) Alex Alex-dev)” // to make your branch<br /><br />
    2. git status<br /><br />
    3. git add -A<br /><br />
    4. git commit -m "Your commit message"<br /><br />
    5. git push origin urName-dev<br /><br />
-When you pull,<br /><br />
+
+###When you pull,<br /><br />
    1. git checkout master<br /><br />
    2. git pull origin master<br /><br />
    3. git checkout urName-dev<br /><br />
