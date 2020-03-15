@@ -15,7 +15,7 @@ Laundromat owner who wants to give out useful information to users
 ## 3. Problem Our Product Will Be Solving:
 Unless people go to a laundromat physically, they do not know the availability of machines. Our designed software will solve the problem of people’s frustration of waiting for a long time, when all the laundry machines are full. We will build a software that notifies a current status and remaining time of laundry machines to users. Our solution is unique compared to current solutions since there is no solution yet to save time by knowing the current operation status and remaining time of laundry machines.
 
-## '. Existing Solutions Linking to Users:
+## 4. Existing Solutions Linking to Users:
 
 1) laundromat with cafe. <br />
 
