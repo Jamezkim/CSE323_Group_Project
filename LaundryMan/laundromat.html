@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>B-Hero : Services</title>
+    <title>LaundryMan : Services</title>
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/icon" href="assets/images/favicon.ico"/>
     <!-- Font Awesome -->
@@ -79,13 +79,7 @@
 			        <a href="index.html">Home</a>
 			      </li>
 			      <li class="nav-item"><a href="laundromat.html">Laundromat</a></li>
-				  <li class="nav-item dropdown">
-					<a class="dropdown-toggle" href="blog.html" role="button" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Alarm</a>
-				   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-					  <a class="dropdown-item" href="alarm-setting.html">Alarm Setting</a>
-					  <a class="dropdown-item" href="weekly-reminder.html">Weekly Reminder</a>
-					</div>
-				  </li>
+				  <li class="nav-item"><a href="alarm-setting.html">Alarm Setting</a></li>
 				  <li class="nav-item"><a href="message.html">Message</a></li>
 			    </ul>
 			  </div>
@@ -95,39 +89,135 @@
 	<!-- End Header -->
 
 	<!-- Start Page Header area -->
-	<div id="mu-page-header">
+	<!-- <div id="mu-page-header"> -->
 		<div class="container">
-			<div class="row">
+			<div class="row-md-6">
 				<div class="col-md-12">
 					<div class="mu-page-header-area">
-						<h1 class="mu-page-header-title">Our exclusive services</h1>
+						<h1 class="mu-page-header-title">Check and Reserve</h1>
+						<h3 class="d-flex justify-content-center">Operation Time: 08:00~24:00 AM</h3>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+		<div>
+			<p>Date/Time: <span id="datetime"></span></p><script>var dt = new Date();
+					document.getElementById("datetime").innerHTML=dt.toLocaleString();</script>
+		</div>
+	<!-- </div> -->
 	<!-- End Page Header area -->
-
-	<!-- Start Breadcrumb -->
-	<div id="mu-breadcrumb">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<nav aria-label="breadcrumb" role="navigation">
-					  <ol class="breadcrumb mu-breadcrumb">
-					    <li class="breadcrumb-item"><a href="#">Home</a></li>
-					    <li class="breadcrumb-item active" aria-current="page">Services</li>
-					  </ol>
-					</nav>
+	<!-- Start main content -->
+	<div class="container">
+			<div class="row-md-6">
+				<div class="col-md-12">	
+					<div class="center">
+						<img src="assets/images/laundryM.jpg" alt="Laundry Machines" class="laundrymachines">
+						<img src="assets/images/laundryM.jpg" alt="Laundry Machines" class="laundrymachines">
+						<img src="assets/images/laundryM.jpg" alt="Laundry Machines" class="laundrymachines">
+						<img src="assets/images/laundryM.jpg" alt="Laundry Machines" class="laundrymachines">
+						<img src="assets/images/laundryM.jpg" alt="Laundry Machines" class="laundrymachines">
+						<img src="assets/images/laundryM.jpg" alt="Laundry Machines" class="laundrymachines">
+						<img src="assets/images/laundryM.jpg" alt="Laundry Machines" class="laundrymachines">
+						<img src="assets/images/laundryM.jpg" alt="Laundry Machines" class="laundrymachines">
+						<img src="assets/images/laundryM.jpg" alt="Laundry Machines" class="laundrymachines">
+						<img src="assets/images/laundryM.jpg" alt="Laundry Machines" class="laundrymachines">
+						
+							<a href="#" style="color:#3d7cf5 ; border-radius: 20px;" class="next">Reserve</a>
+							<a href="#" style="color:#3d7cf5 ; border-radius: 20px;" class="next">Cancel</a>
+						</div>
+					</div>
+				</div>
+  		</div>
+		
+	
+		<!-- Start Pricing Table -->
+		<section id="mu-pricing">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="mu-pricing-area">
+							<!-- Title -->
+							<div class="row">
+								<div class="col-md-12"></div>
+								<div class="col-md-12">
+									<div class="mu-pricing-content">
+										<ul class="mu-pricing-table">
+											<li>
+												<div class="mu-pricing-single">
+													<div class="mu-pricing-single-icon">
+														<span class="fa fa-user"></span>
+													</div>
+													<div class="mu-pricing-single-title">
+														<h3>Basic</h3>
+													</div>
+													<div class="mu-pricing-single-content">
+														<ul>
+															<li>Lorem ipsum dolor sit amet.</li>
+															<li>Consectetuer elit aeneaneget dolor.</li>
+															<li>Aenean massa cum sociis natoque.</li>
+															<li>Penatibus.</li>
+														</ul>
+													</div>
+													<div class="mu-single-pricebox">
+														<h4>29$<span>/month</span></h4>
+													</div>
+													<a class="mu-buy-now-btn" href="#">Buy now</a>
+												</div>
+											</li>
+											<li class="mu-standard-pricing">
+												<div class="mu-pricing-single">
+													<div class="mu-pricing-single-icon">
+														<span class="fa fa-lock"></span>
+													</div>
+													<div class="mu-pricing-single-title">
+														<h3>Standard</h3>
+													</div>
+													<div class="mu-pricing-single-content">
+														<ul>
+															<li>Lorem ipsum dolor sit amet.</li>
+															<li>Consectetuer elit aeneaneget dolor.</li>
+															<li>Aenean massa cum sociis natoque.</li>
+															<li>Penatibus.</li>
+														</ul>
+													</div>
+													<div class="mu-single-pricebox">
+														<h4>99$<span>/month</span></h4>
+													</div>
+													<a class="mu-buy-now-btn" href="#">Buy now</a>
+												</div>
+											</li>
+											<li>
+												<div class="mu-pricing-single">
+													<div class="mu-pricing-single-icon">
+														<span class="fa fa-paper-plane"></span>
+													</div>
+													<div class="mu-pricing-single-title">
+														<h3>Premium</h3>
+													</div>
+													<div class="mu-pricing-single-content">
+														<ul>
+															<li>Lorem ipsum dolor sit amet.</li>
+															<li>Consectetuer elit aeneaneget dolor.</li>
+															<li>Aenean massa cum sociis natoque.</li>
+															<li>Penatibus.</li>
+														</ul>
+													</div>
+													<div class="mu-single-pricebox">
+														<h4>229$<span>/month</span></h4>
+													</div>
+													<a class="mu-buy-now-btn" href="#">Buy now</a>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
-	</div>
-	<!-- End Breadcrumb -->
-	
-	<!-- Start main content -->
-	<main>
-		
+		</section>
+		<!-- End Pricing Table -->	
 		<!-- Start Services -->
 		<section id="mu-service">
 			<div class="container">
@@ -135,15 +225,17 @@
 					<div class="col-md-12">
 						<div class="mu-service-area">
 							<!-- Title -->
-							<div class="row">
+							<!-- <div class="row">
 								<div class="col-md-12">
 									<div class="mu-title">
 										<h2>Our exclusive services</h2>
-										<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa cum sociis.</p>
+										<p> Please Reserve Your Own Machines and Take the Chance of our Exclusive Services </p>
 									</div>
 								</div>
-							</div>
-							<!-- Start Service Content -->
+							</div> -->
+
+	<!-- End main content -->	
+	<!-- Start Service Content -->
 							<div class="row">
 								<div class="col-md-12">
 									<div class="mu-service-content">
@@ -292,99 +384,6 @@
 		</section>
 		<!-- End Counter -->
 
-		<!-- Start Pricing Table -->
-		<section id="mu-pricing">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="mu-pricing-area">
-							<!-- Title -->
-							<div class="row">
-								<div class="col-md-12">
-									<div class="mu-title">
-										<h2>Our Pricing Table</h2>
-										<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa cum sociis.</p>
-									</div>
-								</div>
-								<div class="col-md-12">
-									<div class="mu-pricing-content">
-										<ul class="mu-pricing-table">
-											<li>
-												<div class="mu-pricing-single">
-													<div class="mu-pricing-single-icon">
-														<span class="fa fa-user"></span>
-													</div>
-													<div class="mu-pricing-single-title">
-														<h3>Basic</h3>
-													</div>
-													<div class="mu-pricing-single-content">
-														<ul>
-															<li>Lorem ipsum dolor sit amet.</li>
-															<li>Consectetuer elit aeneaneget dolor.</li>
-															<li>Aenean massa cum sociis natoque.</li>
-															<li>Penatibus.</li>
-														</ul>
-													</div>
-													<div class="mu-single-pricebox">
-														<h4>29$<span>/month</span></h4>
-													</div>
-													<a class="mu-buy-now-btn" href="#">Buy now</a>
-												</div>
-											</li>
-											<li class="mu-standard-pricing">
-												<div class="mu-pricing-single">
-													<div class="mu-pricing-single-icon">
-														<span class="fa fa-lock"></span>
-													</div>
-													<div class="mu-pricing-single-title">
-														<h3>Standard</h3>
-													</div>
-													<div class="mu-pricing-single-content">
-														<ul>
-															<li>Lorem ipsum dolor sit amet.</li>
-															<li>Consectetuer elit aeneaneget dolor.</li>
-															<li>Aenean massa cum sociis natoque.</li>
-															<li>Penatibus.</li>
-														</ul>
-													</div>
-													<div class="mu-single-pricebox">
-														<h4>99$<span>/month</span></h4>
-													</div>
-													<a class="mu-buy-now-btn" href="#">Buy now</a>
-												</div>
-											</li>
-											<li>
-												<div class="mu-pricing-single">
-													<div class="mu-pricing-single-icon">
-														<span class="fa fa-paper-plane"></span>
-													</div>
-													<div class="mu-pricing-single-title">
-														<h3>Premium</h3>
-													</div>
-													<div class="mu-pricing-single-content">
-														<ul>
-															<li>Lorem ipsum dolor sit amet.</li>
-															<li>Consectetuer elit aeneaneget dolor.</li>
-															<li>Aenean massa cum sociis natoque.</li>
-															<li>Penatibus.</li>
-														</ul>
-													</div>
-													<div class="mu-single-pricebox">
-														<h4>229$<span>/month</span></h4>
-													</div>
-													<a class="mu-buy-now-btn" href="#">Buy now</a>
-												</div>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- End Pricing Table -->
 
 
 		<!-- Start Client Testimonials -->
@@ -437,6 +436,7 @@
 						<div class="mu-clients-area">
 
 							<!-- Start Clients brand logo -->
+							<!-- pictures to be added  -->
 							<div class="mu-clients-slider">
 
 								<div class="mu-clients-single">
@@ -470,13 +470,17 @@
 				</div>
 			</div>
 		</div>
-		<!-- End Clients -->
+		<!— End Clients —>
 
-	</main>
+	</main>		
+			
+
 	
-	<!-- End main content -->	
-			
-			
+
+
+
+
+
 	<!-- Start footer -->
 	<footer id="mu-footer">
 		<div class="mu-footer-top">
@@ -484,8 +488,8 @@
 				<div class="row">
 					<div class="col-md-3">
 						<div class="mu-single-footer">
-							<img class="mu-footer-logo" src="assets/images/logo.png" alt="logo">
-							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus. </p>
+							<img class="mu-footer-logo" src="assets/images/Logo2.jpg" alt="logo">
+							<p>Please Reserve Your Own Machines and Take the Chance of our Exclusive Services </p>
 							<div class="mu-social-media">
 								<a href="#"><i class="fa fa-facebook"></i></a>
 								<a class="mu-twitter" href="#"><i class="fa fa-twitter"></i></a>
@@ -626,6 +630,5 @@
 	    });
 
 	</script>
-    
   </body>
 </html>
