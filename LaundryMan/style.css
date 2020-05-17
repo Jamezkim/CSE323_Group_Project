@@ -1,4 +1,3 @@
-
 /*=====
 Template Name: B-Hero	
 Author: MarkUps
@@ -140,7 +139,7 @@ kbd {
 	background-color: #ddd;
 	padding: 4px 6px;
 	border-radius: 2px;
-	color: ;
+	/* color:  */
 }
 
 address {
@@ -690,6 +689,10 @@ a:focus,
 	line-height: 48px;
 	margin-right: 20px;
 }
+/* 
+.mu-pricing-single-icon-1 .fa{
+
+} */
 
 .mu-single-service-icon .fa {
 	
@@ -1098,8 +1101,8 @@ a:focus,
 	width: 100%;
 	padding-bottom: 30px;
 }
-
-.mu-pricing-single-icon span {
+/* size of icons */
+.mu-pricing-single-icon span {   
 	color: #0277bd;
 	font-size: 60px;
 }
@@ -1177,7 +1180,7 @@ a:focus,
 	padding: 50px 0 40px;
 }
 
-.mu-standard-pricing .mu-single-pricebox {;
+.mu-standard-pricing .mu-single-pricebox {
 	padding: 5px 0 40px;
 }
 
@@ -1645,7 +1648,7 @@ a:focus,
 .mu-page-header-area {
 	display: inline;
 	float: left;
-	padding: 150px 0;
+	padding: 75px 0;
 	width: 100%;
 	position: relative;
 	z-index: 20;
@@ -3049,7 +3052,7 @@ a:focus,
 	.mu-buy-now-btn,
 	.mu-standard-pricing .mu-buy-now-btn {
 		font-size: 16px;
-		padding: 8px 25px;
+		padding: 15px 25px;
 	}
 
 	.mu-standard-pricing .mu-pricing-single {
@@ -3583,6 +3586,37 @@ a:focus,
 		padding: 10px 0;
 	}
 
+	.laundrymachines{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+		/* align-content: center; */
+	}
+	
+	div.center {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+	}
+	 
+	a {
+		text-decoration: #3d7cf0;
+		display: contents;
+		padding: 8px 16px;
+	  }
+
+	.next {
+		background-color: #f1f1f1;
+		color: black;
+	}  
+	next:hover{
+		background-color: blue;
+		/* color: black; */
+	}
+
+
 	.mu-single-team-img,
 	.mu-single-team-content {
 		width: 100%;
@@ -3701,4 +3735,3 @@ a:focus,
 	
 	
 }
-
