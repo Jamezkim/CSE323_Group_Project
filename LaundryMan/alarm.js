@@ -179,4 +179,8 @@ $(document).ready(function(){
   $("#howprev").click(function() {
     $('.ui.accordion').accordion('open', 1);
   })
+  var modal = document.getElementById("myModal");
+  $("#savehow").click(function() {
+    modal.style.display = "block";
+  })
 });

@@ -67,7 +67,7 @@
 			        <a href="index.html">Home</a>
 			      </li>
 			      <li class="nav-item"><a href="laundromat.html">Laundromat</a></li>
-				  <li class="nav-item dropdown">
+				  <li class="nav-item dropdown active">
 					<a class="dropdown-toggle" href="blog.html" role="button" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Alarm</a>
 				   <div class="dropdown-menu active" aria-labelledby="navbarDropdown">
 					  <a class="dropdown-item" href="alarm-setting.html">Alarm Setting</a>
@@ -216,14 +216,26 @@
 									<label><input type="radio" name="optradio">   By Text Message</label>
 								</div>
 							</div>
-							<button type="button", class="save">Save</button>
+							<button type="button", class="save", id="savehow">Save</button>
 							<button type="button", class="prev", id="howprev">&laquo; Prev</button>
 							<br>
 						</div>
 					  </div>
+					  
 				
 				</div>
 			</div>
+		</div>
+		<div id="myModal" class="modal">
+
+			<!-- Modal content -->
+			<div class="modal-content" style="height: 700px; vertical-align: middle;">
+				<h1 style="text-align: center; color: black;">Your alarm is successfully saved!</h1>
+				<div class="col-md-12" style="text-align: center; margin-top: 100px;">
+					<a class="mu-primary-btn" href="index.html">OK</a> 
+				</div>
+			</div>
+		
 		</div>
 		
 				
