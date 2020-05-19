@@ -246,7 +246,7 @@ $(document).ready(function(){
     }
   })
   $("#timenext").click(function() {
-    if (!checkStates()) {
+    if ($('.search.dropdown').dropdown("get value") == "") {
         triggerAlert("time");
     }
     else {
