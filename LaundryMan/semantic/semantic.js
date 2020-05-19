@@ -2325,7 +2325,7 @@ $.fn.accordion = function(parameters) {
 
         event: {
           click: function() {
-            module.toggle.call(this);
+            
           }
         },
 
