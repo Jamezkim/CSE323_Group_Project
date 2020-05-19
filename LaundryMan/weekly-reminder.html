@@ -220,27 +220,29 @@
 							<button type="button", class="prev", id="howprev">&laquo; Prev</button>
 							<br>
 						</div>
-					  </div>
-					  
-				
+					</div>
 				</div>
 			</div>
 		</div>
-		<div id="myModal" class="modal">
-
-			<!-- Modal content -->
-			<div class="modal-content" style="height: 700px; vertical-align: middle;">
-				<h1 style="text-align: center; color: black;">Your reminding alarm is successfully saved!</h1>
-				<div class="col-md-12" style="text-align: center; margin-top: 100px;">
-					<a class="mu-primary-btn" href="index.html">OK</a> 
-				</div>
-			</div>
-		
-		</div>
-		
-				
 	</main>
-
+	<div class="ui basic modal", id="myModal">
+		<div class="ui icon header">
+		  <i class="material-icons" style="font-size: 100px">save</i>
+		  <div style="font-size:40px">Do you want to save?</div>
+		</div>
+		<div class="content">
+		</div>
+		<div class="actions">
+		  <div class="ui red basic cancel inverted button", id="noModalbtn">
+			<i class="remove icon"></i>
+			No
+		  </div>
+		  <div class="ui green ok inverted button" id="yesModalbtn">
+			<i class="checkmark icon"></i>
+			Yes
+		  </div>
+		</div>
+	</div>
 
 
 

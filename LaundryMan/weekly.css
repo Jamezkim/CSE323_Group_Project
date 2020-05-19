@@ -1,42 +1,58 @@
 /*Hasung css*/
- /* The Modal (background) */
- .modal {
-	display: none; /* Hidden by default */
-	position: fixed; /* Stay in place */
-	z-index: 1; /* Sit on top */
-	padding-top: 100px; /* Location of the box */
-	left: 0;
-	top: 0;
-	width: 100%; /* Full width */
-	height: 100%; /* Full height */
-	overflow: auto; /* Enable scroll if needed */
-	background-color: rgb(0,0,0); /* Fallback color */
-	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  /* Modal Content */
-  .modal-content {
-	background-color: #fefefe;
-	margin: auto;
-	padding: 250px;
-	border: 2px solid #0091ea;
-	width: 80%;
-  }
-  
-  /* The Close Button */
-  .close {
-	color: #868686;
-	float: right;
-	font-size: 50px;
-	font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-	color: #000;
-	text-decoration: none;
-	cursor: pointer;
-  }
+/*
+#########################
+#######   Alert   #######
+#########################
+*/
+.ui-alert-content{
+	position: fixed;
+	width: 360px;
+	z-index: 2060;
+}
+.ui-alert-content-top-right{
+	top: 20px;
+	right: 20px;
+}
+.ui-alert-content-top-center{
+	top: 20px;
+	margin: 0 0 0 -180px;
+	left: 50%;
+}
+.ui-alert-content-top-left{
+	top: 20px;
+	left: 20px;
+}
+.ui-alert-content-bottom-right{
+	bottom: 0;
+	right: 20px;
+}
+.ui-alert-content-bottom-center{
+	bottom: 0;
+	margin: 0 0 0 -180px;
+	left: 50%;
+}
+.ui-alert-content-bottom-left{
+	bottom: 0;
+	left: 20px;
+}
+.ui-alert {
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+.ui-alert p{
+	display: table;
+}
+
+
+
+/*
+#########################
+#######   Modal   #######
+#########################
+*/
+.ui.basic.modal {
+	position: relative;
+}
 .week_title {
 	font-family: 'Raleway', sans-serif;
 	

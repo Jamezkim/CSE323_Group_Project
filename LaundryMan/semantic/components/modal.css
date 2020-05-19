@@ -297,6 +297,7 @@
 .ui.basic.modal {
   background-color: transparent;
   border: none;
+  
   border-radius: 0em;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
