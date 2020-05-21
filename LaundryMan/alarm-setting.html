@@ -122,77 +122,83 @@
 	
 	<!-- Start main content -->
 	<main>
-		<div class="week_title" style="margin-top: 80px;">Alarm Setting</div>
-		<br>
-		<br>	
+		<div class="week_title" style="margin-top: 80px; margin-bottom: 80px;">Alarm Setting</div>	
 		<!-- Start Portfolio -->
-		<section id="mu-portfolio">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12" style="margin-bottom: 30px;">
-						<div class="mu-portfolio-area">
-							<div class="row">
-								<div class="col-md-12">
-									<h2 style="color: black; text-align: center;">Default Alarm: When the laundry is finished</h2>
-								</div>
-							</div>
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12" style="margin-bottom: 60px;">
+					<div class="row">
+						<div class="col-md-12">
+							<h3 style="color: black; text-align: center;">Default Alarm: When the laundry is finished</h3>
 						</div>
 					</div>
-					<div class="col-md-12" style="margin-bottom: 100px;">
-						<div class="row">
-							<div class="col-md-12">
-								<h2 style="color: black; text-align: center;">Before the laundry is finished:</h2>
-							</div>
+				</div>
+				<div class="col-md-12" style="margin-bottom: 20px;">
+					<div class="row">
+						<div class="col-md-12" style="margin-bottom: 30px;">
+							<h3 style="color: black; text-align: center;">Before the laundry is finished</h3>
 						</div>
-						<div class="container">
-							<br><br>
-							<div class="col-md-12">
-								<div class="slidecontainer">
-									<input type="range" min="0" max="20" value="0" class="slider" id="myRange">
-									<p style="color: black;">before <span id="demo"></span> minutes</p>
-								</div>
-							</div>
-						</div>
+						<button class="button r" id="button-1">
+							<input onclick="slidershow()" type="checkbox" class="checkbox" checked>
+							<div class="knobs"></div>
+							<div class="layer"></div>
+						</button>
 					</div>
-					<div class="col-md-12" style="margin-bottom: 80px;">
-						<div class="row">
-							<div class="col-md-12">
-								<h2 style="color: black; text-align: center;">After the laundry is finished:</h2>
-							</div>
-						</div>
-						<div class="container">
-							<br><br>
-							<div class="col-md-12">
-								<div class="slidecontainer">
-									<input type="range" min="0" max="20" value="0" class="slider" id="myRange2">
-									<p style="color: black;">After <span id="demo2"></span> minutes</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-12" style="margin-bottom: 150px;">
-						<div class="row">
-							<div class="col-md-12" style="text-align: right;">
-								<button class="mu-primary-btn" id="trigger" style="color: white;">Save</button>
+					<div class="container">
+						<br>
+						<div class="col-md-12">
+							<div class="slidecontainer" id="slider1" style="display: none;">
+								<input type="range" min="1" max="20" value="0" class="slider" id="myRange">
+								<p style="color: black;">before <span id="demo"></span> minutes</p>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-
-			<!-- The Modal -->
-			<div id="myModal" class="modal">
-
-				<!-- Modal content -->
-				<div class="modal-content" style="height: 700px; vertical-align: middle;">
-					<h1 style="text-align: center; color: black;">Your alarm is successfully saved!</h1>
-					<div class="col-md-12" style="text-align: center; margin-top: 100px;">
-						<a class="mu-primary-btn" href="index.html">OK</a> 
+				<div class="col-md-12" style="margin-bottom: 20px;">
+					<div class="row">
+						<div class="col-md-12" style="margin-bottom: 30px;">
+							<h3 style="color: black; text-align: center;">After the laundry is finished</h3>
+						</div>
+						<button class="button r" id="button-2">
+							<input onclick="slidershow2()" type="checkbox" class="checkbox" checked>
+							<div class="knobs"></div>
+							<div class="layer"></div>
+						</button>
+					</div>
+					<div class="container">
+						<br>
+						<div class="col-md-12">
+							<div class="slidecontainer" id="slider2" style="display: none;">
+								<input type="range" min="1" max="20" value="0" class="slider" id="myRange2">
+								<p style="color: black;">After <span id="demo2"></span> minutes</p>
+							</div>
+						</div>
 					</div>
 				</div>
-			
+				<div class="col-md-12">
+					<div class="row">
+						<div class="col-md-12" style="text-align: right;">
+							<button class="mu-primary-btn" id="trigger" style="color: white;">Save</button>
+						</div>
+					</div>
+				</div>
 			</div>
-		</section>
+		</div>
+
+		<!-- The Modal -->
+		<div id="myModal" class="modal">
+
+			<!-- Modal content -->
+			<div class="modal-content" style="height: 700px; vertical-align: middle;">
+				<h1 style="text-align: center; color: black;">Your alarm is successfully saved!</h1>
+				<div class="col-md-12" style="text-align: center; margin-top: 100px;">
+					<a class="mu-primary-btn" href="index.html">OK</a> 
+				</div>
+			</div>
+		
+		</div>
+		
 		<!-- End Portfolio -->
 
 	</main>
@@ -283,10 +289,15 @@
 	
 	// Get the <span> element that closes the modal
 	var span = document.getElementsByClassName("close")[0];
+
+	var x = document.getElementById("button-1");
+	var y = document.getElementById("button-2");
 	
 	// When the user clicks the button, open the modal 
 	btn.onclick = function() {
 	  modal.style.display = "block";
+	  x.style.display = "none";
+	  y.style.display = "none";
 	}
 	
 	// When the user clicks on <span> (x), close the modal
@@ -300,6 +311,28 @@
 		modal.style.display = "none";
 	  }
 	}
+	</script>
+
+	<script>
+		function slidershow() {
+			var x = document.getElementById("slider1");
+			if (x.style.display === "none") {
+				x.style.display = "block";
+			} else {
+				x.style.display = "none";
+			}
+		}
+	</script>
+
+	<script>
+		function slidershow2() {
+			var x = document.getElementById("slider2");
+			if (x.style.display === "none") {
+				x.style.display = "block";
+			} else {
+				x.style.display = "none";
+			}
+		}
 	</script>
 	
     
