@@ -6,6 +6,10 @@ $(document).ready(function(){
   .accordion();
   $('.ui.modal')
   .modal();
+  $('.ui.pointing.dropdown')
+  .dropdown({
+      action: 'nothing'
+  });
 
 //   Alert js
   $.uiAlert = function(options) {
@@ -268,5 +272,9 @@ $(document).ready(function(){
   })
   $("#yesModalbtn").click(function() {
     window.location.href="index.html";
+  })
+  $("#myItem1").click(function() {
+    $("#itemText").css("color", "darkgray")
+    
   })
 });

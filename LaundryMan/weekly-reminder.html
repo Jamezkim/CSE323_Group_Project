@@ -68,24 +68,51 @@
 			      </li>
 			      <li class="nav-item"><a href="laundromat.html">Laundromat</a></li>
 				  <li class="nav-item dropdown active">
-					<a class="dropdown-toggle" role="button" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Alarm</a>
+					<a class="dropdown-toggle" href="#" role="button" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Alarm</a>
 				   <div class="dropdown-menu active" aria-labelledby="navbarDropdown">
 					  <a class="dropdown-item" href="alarm-setting.html">Alarm Setting</a>
 					  <a class="dropdown-item" href="weekly-reminder.html">Weekly Reminder</a>
 					</div>
 				  </li>
-				  <li class="nav-item"><a href="message.html">Message</a></li>
+				  <li class="nav-item">
+					<div class="ui top right pointing dropdown"><a href="#">Message</a>
+						<div class="menu">
+							<div class="header">
+								<i class="bell icon"></i>
+								Today
+							</div>
+							<div class="divider"></div>
+							<div class="item", id="myItem1">
+								<span id="itemText">Your laundry is done!</span>
+							</div>
+							<div class="divider"></div>
+							<div class="item">
+								<span style="color:darkgray">Today is your laundry day!</span>
+							</div>
+							<div class="divider"></div>
+							<div class="header">
+								<i class="bell outline icon"></i>
+								<span style="color:darkgray">05/18/2020</span>
+							</div>
+							<div class="divider"></div>
+							<div class="item">
+								<span style="color:darkgray">Your laundry is done!</span>
+							</div>
+							<div class="divider"></div>
+							<div class="item">
+								<span style="color:darkgray">5 minutes left before your dryer is done!</span>
+							</div>
+							<div class="divider"></div>
+							<div class="item">
+								<span style="color:darkgray">Today is your laundry day!</span>
+								<style>.item { margin-bottom: 7px }</style>
+							</div>
+						</div>
+					</div>
+				  </li>
 				  
 				  <!--Notification Message-->
-				  <li class="nav-item", id="noti_Container">
-					<div id="noti_Counter"></div>
-					<div id="noti_Button"></div>
-					<div id="notifications">
-					  <h3>Notifications</h3>
-					  <div style="height:300px;"></div>
-					  <div class="seeAll"><a href="#">See All</a></div>
-				  </div>
-				</li>
+				  
 			    </ul>
 			  </div>
 			</nav>
@@ -243,6 +270,17 @@
 		  </div>
 		</div>
 	</div>
+	
+	<!-- <div class="modal-content" style="height: 700px; vertical-align: middle;">
+		<h1 style="text-align: center; color: black;">Your alarm is successfully saved!</h1>
+		<div class="col-md-12" style="text-align: center; margin-top: 100px;">
+			<a class="mu-primary-btn" href="index.html">OK</a> 
+		</div>
+	</div>
+	<script>
+		var modal = document.getElementById("myModal");
+		var btn = document.getElementById("itemText");
+	</script> -->
 
 
 
