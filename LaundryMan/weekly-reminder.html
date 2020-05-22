@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -75,18 +76,19 @@
 					</div>
 				  </li>
 				  <li class="nav-item">
-					<div class="ui top right pointing dropdown"><a href="#">Message</a>
+					<div class="ui top right pointing dropdown" id="messageBar"><a href="#">Message</a>
+						<span class="badge">N</span>
 						<div class="menu">
 							<div class="header">
 								<i class="bell icon"></i>
 								Today
 							</div>
 							<div class="divider"></div>
-							<div class="item", id="myItem1">
+							<div class="item" id="myItem1">
 								<span id="itemText">Your laundry is done!</span>
 							</div>
 							<div class="divider"></div>
-							<div class="item">
+							<div class="item" id="myItem2">
 								<span style="color:darkgray">Today is your laundry day!</span>
 							</div>
 							<div class="divider"></div>
@@ -95,15 +97,15 @@
 								<span style="color:darkgray">05/18/2020</span>
 							</div>
 							<div class="divider"></div>
-							<div class="item">
+							<div class="item" id="myItem3">
 								<span style="color:darkgray">Your laundry is done!</span>
 							</div>
 							<div class="divider"></div>
-							<div class="item">
+							<div class="item" id="myItem4">
 								<span style="color:darkgray">5 minutes left before your dryer is done!</span>
 							</div>
 							<div class="divider"></div>
-							<div class="item">
+							<div class="item" id="myItem5">
 								<span style="color:darkgray">Today is your laundry day!</span>
 								<style>.item { margin-bottom: 7px }</style>
 							</div>
@@ -252,7 +254,9 @@
 			</div>
 		</div>
 	</main>
-	<div class="ui basic modal", id="myModal">
+	
+	<!-- Modals -->
+	<div class="ui basic modal", id="confirmModal">
 		<div class="ui icon header">
 		  <i class="material-icons" style="font-size: 100px">save</i>
 		  <div style="font-size:40px">Do you want to save?</div>
@@ -270,6 +274,114 @@
 		  </div>
 		</div>
 	</div>
+	<div class="ui basic modal", id="confirmModal2">
+		<div class="ui icon header">
+		  <i class="check circle outline icon" style="font-size: 100px"></i>
+		  <div style="font-size:40px">Your alarm is successfully saved!</div>
+		</div>
+		<div class="content">
+		</div>
+		<div class="actions">
+		  <div class="ui green ok inverted button" id="okModalbtn">
+			<i class="checkmark icon"></i>
+			OK
+		  </div>
+		</div>
+	</div>
+	<style>
+		.ui.mini.modal {
+			height:180px;
+			position: relative;
+		}
+	
+	</style>
+	<div class="messageModals">
+	<!-- Message Modal 1 -->
+	<div class="ui mini test modal" id="messageModal1">
+		<div class="header">
+		  Today
+		</div>
+		<div class="content">
+		  <p>Your laundry is done!</p>
+		</div>
+		<div class="actions">
+		  
+		<button class="ui gray basic button" id="messageClosebtn1">
+			Close
+		</button>
+		</div>
+	</div>
+	<!-- Message Modal 2 -->
+	<div class="ui mini test modal" id="messageModal2">
+		<div class="header">
+		  Today
+		</div>
+		<div class="content">
+		  <p>Your laundry is your laundry day!</p>
+		</div>
+		<div class="actions">
+		  
+		<button class="ui gray basic button" id="messageClosebtn2">
+			Close
+		</button>
+		</div>
+	</div>
+	<!-- Message Modal 3-->
+	<div class="ui mini test modal" id="messageModal3">
+		<div class="header">
+		  05/18/2020
+		</div>
+		<div class="content">
+		  <p>Your laundry is done!</p>
+		</div>
+		<div class="actions">
+		  
+		<button class="ui gray basic button" id="messageClosebtn3">
+			Close
+		</button>
+		</div>
+	</div>
+
+	<!-- Message Modal 4-->
+	<div class="ui mini test modal" id="messageModal4">
+		<div class="header">
+		  05/18/2020
+		</div>
+		<div class="content">
+		  <p>5 minutes left before your dryer is done!</p>
+		</div>
+		<div class="actions">
+		  
+		<button class="ui gray basic button" id="messageClosebtn4">
+			Close
+		</button>
+		</div>
+	</div>
+
+	<!-- Message Modal 5-->
+	<div class="ui mini test modal" id="messageModal5">
+		<div class="header">
+		  05/18/2020
+		</div>
+		<div class="content">
+		  <p>Today is your laundry day!</p>
+		</div>
+		<div class="actions">
+		  
+		<button class="ui gray basic button" id="messageClosebtn5">
+			Close
+		</button>
+		</div>
+	</div>
+	<div class="ui hidden negative message" id="test1">
+		<i class="close icon"></i>
+		<div class="header">
+		  We're sorry we can't apply that discount
+		</div>
+		<p>That offer has expired
+	  </p></div>
+
+
 	
 	<!-- <div class="modal-content" style="height: 700px; vertical-align: middle;">
 		<h1 style="text-align: center; color: black;">Your alarm is successfully saved!</h1>
@@ -309,7 +421,8 @@
     <!-- Custom js -->
 	<script type="text/javascript" src="assets/js/custom.js"></script>
 	<script src="alarm.js"></script>
-	<script src="noti.js"></script>
+	<script src="messageModal.js"></script>
+	
 	
 	<!--Just DELETED-->
 	<!-- <script>

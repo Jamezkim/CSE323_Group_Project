@@ -4,13 +4,19 @@ $(document).ready(function(){
   .dropdown();
   $('.ui.accordion')
   .accordion();
-  $('.ui.modal')
-  .modal();
+
   $('.ui.pointing.dropdown')
   .dropdown({
       action: 'nothing'
   });
-
+  $('.message .close')
+  .on('click', function() {
+    $(this)
+      .closest('.message')
+      .transition('fade')
+    ;
+  })
+;
 //   Alert js
   $.uiAlert = function(options) {
     var setUI = $.extend({
@@ -20,21 +26,22 @@ $(document).ready(function(){
     bgcolors: '#fff',
     position: 'top-right',
     icon: '',
-    time: 5,
-    permanent: false
+    time: 3,
+    permanent: false,
     }, options);
 
     var ui_alert = 'ui-alert-content';
     ui_alert += '-' + setUI.position;
-    setUI.bgcolors ='style="background-color: '+setUI.bgcolor+';   box-shadow: 0 0 0 1px rgba(255,255,255,.5) inset,0 0 0 0 transparent;"';
-    if(setUI.bgcolors === '') setUI.bgcolors ='style="background-color: ; box-shadow: 0 0 0 1px rgba(255,255,255,.5) inset,0 0 0 0 transparent;"';
+    setUI.bgcolors ='style="background-color: '+setUI.bgcolor+';   0px 0px 0px 1px #E0B4B4 inset, 0px 0px 0px 0px rgba(0, 0, 0, 0);"';
+    if(setUI.bgcolors === '') setUI.bgcolors ='style="background-color: ; 0px 0px 0px 1px #E0B4B4 inset, 0px 0px 0px 0px rgba(0, 0, 0, 0);"';
     if(!$('body > .' + ui_alert).length) {
-        $('body').append('<div class="ui-alert-content ' + ui_alert + '" style="width: inherit;"></div>');
+        $('body').append('<div class="ui-alert-content ' + ui_alert + '" style="width: 97%; height:12%"></div>');
     }
     var message = $('<div id="messages" class="ui icon message" ' + setUI.bgcolors + '><i class="'+setUI.icon+' icon" style="color: '+setUI.textcolor+';"></i><i class="close icon" style="color: '+setUI.textcolor+';" id="messageclose"></i><div style="color: '+setUI.textcolor+'; margin-right: 10px;">   <div class="header">'+setUI.textHead+'</div>  <p> '+setUI.text+'</p></div>  </div>');
     $('.' + ui_alert).prepend(message);
     message.animate({
         opacity: '1',
+        
     }, 300);
     if(setUI.permanent === false){
         var timer = 0;
@@ -63,10 +70,11 @@ $(document).ready(function(){
         $.uiAlert({
             textHead: "Please select the " + option + "!", // header
             text: '', // Text
-            bgcolor: '#DB2828', // background-color
-            textcolor: '#fff', // color
+            bgcolor: '#FFF6F6', // background-color
+            textcolor: '#912D2B', // color
             position: 'bottom-right',// position . top And bottom ||  left / center / right
             icon: 'remove circle', // icon in semantic-UI
+            
             time: 3, // time
         });
    };
@@ -244,6 +252,7 @@ $(document).ready(function(){
   $("#daynext").click(function() {
     if (!checkStates()) {
         triggerAlert("day");
+        ("#test1.message").message('show');
     }
     else {
         $('.ui.accordion').accordion('open', 1);
@@ -265,16 +274,17 @@ $(document).ready(function(){
   })
   
   $("#savehow").click(function() {
-    $('#myModal').modal('show');
+    $('#confirmModal').modal('show');
   })
   $("#noModalbtn").click(function() {
-    $('#myModal').modal('hide');
+    $('#confirmModal').modal('hide');
   })
   $("#yesModalbtn").click(function() {
+    $('#confirmModal2').modal('show');
+  })
+  $("#okModalbtn").click(function() {
     window.location.href="index.html";
   })
-  $("#myItem1").click(function() {
-    $("#itemText").css("color", "darkgray")
-    
-  })
+
+  
 });

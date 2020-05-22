@@ -1,4 +1,22 @@
 /*Hasung css*/
+
+
+/*
+#########################
+#  Notification Counter #
+#########################
+ */  
+.nav-item .badge {
+	position: absolute;
+	top: -5px;
+	right: -5px;
+	padding: 5px 10px;
+	border-radius: 50%;
+	background: red;
+	color: white;
+	font-size: 10px;
+	
+}
 /*
 #########################
 #######   Alert   #######
@@ -38,6 +56,7 @@
 .ui-alert {
 	opacity: 0;
 	filter: alpha(opacity=0);
+	
 }
 .ui-alert p{
 	display: table;
@@ -74,12 +93,6 @@
 	color: black;
 	
 }
-
-/*
-#########################
-####   Notification  ####
-#########################
-*/
 
 
 /*
