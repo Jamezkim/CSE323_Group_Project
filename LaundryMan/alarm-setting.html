@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>LaundryMan</title>
+    <title>LaundryMan: Don't wait anymore</title>
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/icon" href="assets/images/favicon.ico"/>
     <!-- Font Awesome -->
@@ -19,11 +19,12 @@
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/circlebars@1.0.3/dist/circle.css">
     
 
-    <!-- Main Style -->
+	<!-- Main Style -->
+	<link rel="stylesheet" type="text/css" href="semantic/semantic.css">
 	<link href="style.css" rel="stylesheet">
 	<link href="weekly.css" rel="stylesheet">
 	<!--Sementic-->
-	<link rel="stylesheet" type="text/css" href="semantic/semantic.css">
+	
     <script
             src="https://code.jquery.com/jquery-3.1.1.min.js"
             integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
@@ -127,60 +128,62 @@
 		
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12" style="margin-bottom: 60px;">
-					<div class="row">
-						<div class="col text-center">
-							<!-- <h3 style="color: black; text-align: center;">Default Alarm: When the laundry is finished</h3> -->
-							<div class="subtitle">Default Alarm: When the laundry is finished</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-12" style="margin-bottom: 20px;">
-					<div class="row">
-						<div class="col-md-12" style="margin-bottom: 30px;">
-							<h3 style="color: black; text-align: center;">Before the laundry is finished</h3>
-						</div>
-						<button class="button r" id="button-1">
-							<input onclick="slidershow()" type="checkbox" class="checkbox" checked>
-							<div class="knobs"></div>
-							<div class="layer"></div>
-						</button>
-					</div>
-					<div class="container">
-						<br>
-						<div class="col-md-12">
-							<div class="slidecontainer" id="slider1" style="display: none;">
-								<input type="range" min="1" max="20" value="0" class="slider" id="myRange">
-								<p style="color: black;">before <span id="demo"></span> minutes</p>
+				<div class="ui container">
+					<div class="col-md-12" style="margin-bottom: 60px;">
+						<div class="row">
+							<div class="col text-center">
+								<!-- <h3 style="color: black; text-align: center;">Default Alarm: When the laundry is finished</h3> -->
+								<h3 style="color: black;">Default Alarm: When the laundry is finished</h3>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-md-12" style="margin-bottom: 20px;">
-					<div class="row">
-						<div class="col-md-12" style="margin-bottom: 30px;">
-							<h3 style="color: black; text-align: center;">After the laundry is finished</h3>
+					<div class="col-md-12" style="margin-bottom: 20px;">
+						<div class="row">
+							<div class="col-md-12" style="margin-bottom: 30px;">
+								<h3 style="color: black; text-align: center;">Before the laundry is finished</h3>
+							</div>
+							<button class="button r" id="button-1">
+								<input onclick="slidershow()" type="checkbox" class="checkbox" checked>
+								<div class="knobs"></div>
+								<div class="layer"></div>
+							</button>
 						</div>
-						<button class="button r" id="button-2">
-							<input onclick="slidershow2()" type="checkbox" class="checkbox" checked>
-							<div class="knobs"></div>
-							<div class="layer"></div>
-						</button>
-					</div>
-					<div class="container">
-						<br>
-						<div class="col-md-12">
-							<div class="slidecontainer" id="slider2" style="display: none;">
-								<input type="range" min="1" max="20" value="0" class="slider" id="myRange2">
-								<p style="color: black;">After <span id="demo2"></span> minutes</p>
+						<div class="container">
+							<br>
+							<div class="col-md-12">
+								<div class="slidecontainer" id="slider1" style="display: none;">
+									<input type="range" min="1" max="20" value="0" class="slider" id="myRange">
+									<p style="color: black;">before <span id="demo"></span> minutes</p>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-md-12">
-					<div class="row">
-						<div class="col-md-12" style="text-align: right;">
-							<button class="mu-primary-btn" id="trigger" style="color: white;">Save</button>
+					<div class="col-md-12" style="margin-bottom: 20px;">
+						<div class="row">
+							<div class="col-md-12" style="margin-bottom: 30px;">
+								<h3 style="color: black; text-align: center;">After the laundry is finished</h3>
+							</div>
+							<button class="button r" id="button-2">
+								<input onclick="slidershow2()" type="checkbox" class="checkbox" checked>
+								<div class="knobs"></div>
+								<div class="layer"></div>
+							</button>
+						</div>
+						<div class="container">
+							<br>
+							<div class="col-md-12">
+								<div class="slidecontainer" id="slider2" style="display: none;">
+									<input type="range" min="1" max="20" value="0" class="slider" id="myRange2">
+									<p style="color: black;">After <span id="demo2"></span> minutes</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="row">
+							<div class="col-md-12" style="text-align: right;">
+								<button class="mu-primary-btn" id="trigger" style="color: white;">Save</button>
+							</div>
 						</div>
 					</div>
 				</div>
