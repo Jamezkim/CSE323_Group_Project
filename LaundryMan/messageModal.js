@@ -1,4 +1,11 @@
 $(document).ready(function(){
+    $('.ui.pointing.dropdown')
+    .dropdown({
+        action: 'nothing'
+    });
+    $('.message .close').on('click', function() {
+        $(this).closest('.message').transition('fade');
+    });
     $('.ui.modal')
     .modal({
         closable: false,
@@ -70,5 +77,6 @@ $(document).ready(function(){
     $("#messageBar").click(function() {
         $('.badge').fadeOut('fast');
     })
+    
       
 });

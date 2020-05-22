@@ -4,19 +4,6 @@ $(document).ready(function(){
   .dropdown();
   $('.ui.accordion')
   .accordion();
-
-  $('.ui.pointing.dropdown')
-  .dropdown({
-      action: 'nothing'
-  });
-  $('.message .close')
-  .on('click', function() {
-    $(this)
-      .closest('.message')
-      .transition('fade')
-    ;
-  })
-;
 //   Alert js
   $.uiAlert = function(options) {
     var setUI = $.extend({
