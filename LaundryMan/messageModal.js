@@ -1,4 +1,6 @@
 $(document).ready(function(){
+    $('.ui.dropdown')
+  .dropdown();
     $('.ui.pointing.dropdown')
     .dropdown({
         action: 'nothing'
