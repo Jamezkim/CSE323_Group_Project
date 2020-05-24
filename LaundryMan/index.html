@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>LaundryMan</title>
+    <title>LaundryMan: Don't wait anymore</title>
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/icon" href="assets/images/favicon.ico"/>
     <!-- Font Awesome -->
@@ -14,15 +14,25 @@
     <!-- Slick slider -->
     <link href="assets/css/slick.css" rel="stylesheet">
     <!-- Gallery Lightbox -->
-    <link href="assets/css/magnific-popup.css" rel="stylesheet">
-    <!-- Skills Circle CSS  -->
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/circlebars@1.0.3/dist/circle.css">
-    
-
-    <!-- Main Style -->
-	<link href="style.css" rel="stylesheet">
-	<link href="weekly.css" rel="stylesheet">
+	<link href="assets/css/magnific-popup.css" rel="stylesheet">
+	<!--Google Material Icons-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+	
+	<!--Sementic-->
+	<link rel="stylesheet" type="text/css" href="semantic/semantic.css">
+    <script
+            src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+			crossorigin="anonymous">
+		</script>
+    <script src="semantic/semantic.js"></script>
+    <!-- Main Style -->
+    <link href="weekly.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
 
     <!-- Fonts -->
 
@@ -30,10 +40,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,400i,500,500i,600,700" rel="stylesheet">
 	<!-- Google Fonts Open sans -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,800" rel="stylesheet">
- 
- 
+
 	</head>
-  <body>
+   <body>
 
    <!--START SCROLL TOP BUTTON -->
     <a class="scrollToTop" href="#">
@@ -43,7 +52,7 @@
   	
   	<!-- Start Header -->
 	<header id="mu-hero">
-		<div class="container">
+		<div class="container" style="margin-top: 12px; margin-bottom: 12px;">
 			<nav class="navbar navbar-expand-lg navbar-light mu-navbar">
 				<!-- Text based logo -->
 				<a class="navbar-brand mu-logo" href="index.html"><span>LaundryMan</span></a>
@@ -55,26 +64,63 @@
 
 			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 			    <ul class="navbar-nav mr-auto mu-navbar-nav">
-			      <li class="nav-item active">
+			      <li class="nav-item">
 			        <a href="index.html">Home</a>
 			      </li>
 			      <li class="nav-item"><a href="laundromat.html">Laundromat</a></li>
-				  <li class="nav-item dropdown">
-					<a class="dropdown-toggle" href="blog.html" role="button" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Alarm</a>
-				   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				  <li class="nav-item dropdown active">
+					<a class="dropdown-toggle" href="#" role="button" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Alarm</a>
+				   <div class="dropdown-menu active" aria-labelledby="navbarDropdown">
 					  <a class="dropdown-item" href="alarm-setting.html">Alarm Setting</a>
 					  <a class="dropdown-item" href="weekly-reminder.html">Weekly Reminder</a>
 					</div>
 				  </li>
+				  <li class="nav-item">
+					<div class="ui top right pointing dropdown" id="messageBar"><a href="#">Message</a>
+						<span class="badge">N</span>
+						<div class="menu">
+							<div class="header">
+								<i class="bell icon"></i>
+								Today
+							</div>
+							<div class="divider"></div>
+							<div class="item" id="myItem1">
+								<span id="itemText">Your laundry is done!</span>
+							</div>
+							<div class="divider"></div>
+							<div class="item" id="myItem2">
+								<span style="color:darkgray">Today is your laundry day!</span>
+							</div>
+							<div class="divider"></div>
+							<div class="header">
+								<i class="bell outline icon"></i>
+								<span style="color:darkgray">05/18/2020</span>
+							</div>
+							<div class="divider"></div>
+							<div class="item" id="myItem3">
+								<span style="color:darkgray">Your laundry is done!</span>
+							</div>
+							<div class="divider"></div>
+							<div class="item" id="myItem4">
+								<span style="color:darkgray">5 minutes left before your dryer is done!</span>
+							</div>
+							<div class="divider"></div>
+							<div class="item" id="myItem5">
+								<span style="color:darkgray">Today is your laundry day!</span>
+								<style>.item { margin-bottom: 7px }</style>
+							</div>
+						</div>
+					</div>
+				  </li>
 				  
+				  <!--Notification Message-->
 			    </ul>
 			  </div>
 			</nav>
 		</div>
-	</header>
-	<!-- End Header -->
-
-	<!-- Start slider area -->
+    </header>
+    
+    <!-- Start slider area -->
 	<div id="mu-slider">
 		<div class="mu-slide">
 			<!-- Start single slide  -->
@@ -120,7 +166,7 @@
 							<div class="row">
 								<div class="col-md-6">
 									<div class="mu-about-left">
-										<img class="" src="assets/images/about-us.jpg" alt="img">
+										<img class="" src="assets/images/mainLaundry.png" alt="img">
 									</div>
 								</div>
 								<div class="col-md-6">
@@ -151,11 +197,123 @@
 		<!-- End About -->
 			
 
+	</main>
+
 	
+	<style> 
+		.ui.mini.modal {
+			height:180px;
+			position: relative;
+		}
+		img:hover {
+		/* Start the shake animation and make the animation last for 0.5 seconds */
+			animation: shake 0.5s; 
+  
+			/* When the animation is finished, start again */
+			animation-iteration-count: infinite; 
+		}
+
+		@keyframes shake {
+			0% { transform: translate(1px, 1px) rotate(0deg); }
+			10% { transform: translate(-1px, -2px) rotate(-1deg); }
+			20% { transform: translate(-3px, 0px) rotate(1deg); }
+			30% { transform: translate(3px, 2px) rotate(0deg); }
+			40% { transform: translate(1px, -1px) rotate(1deg); }
+			50% { transform: translate(-1px, 2px) rotate(-1deg); }
+			60% { transform: translate(-3px, 1px) rotate(0deg); }
+			70% { transform: translate(3px, 1px) rotate(-1deg); }
+			80% { transform: translate(-1px, -1px) rotate(1deg); }
+			90% { transform: translate(1px, 2px) rotate(0deg); }
+			100% { transform: translate(1px, -2px) rotate(-1deg); }
+		}
+	
+	</style>
+	<!-- Message Modal 1 -->
+	<div class="ui mini test modal" id="messageModal1">
+		<div class="header">
+		  Today
+		</div>
+		<div class="content">
+		  <p>Your laundry is done!</p>
+		</div>
+		<div class="actions">
+		  
+		<button class="ui gray basic button" id="messageClosebtn1">
+			Close
+		</button>
+		</div>
+	</div>
+	<!-- Message Modal 2 -->
+	<div class="ui mini test modal" id="messageModal2">
+		<div class="header">
+		  Today
+		</div>
+		<div class="content">
+		  <p>Your laundry is your laundry day!</p>
+		</div>
+		<div class="actions">
+		  
+		<button class="ui gray basic button" id="messageClosebtn2">
+			Close
+		</button>
+		</div>
+	</div>
+	<!-- Message Modal 3-->
+	<div class="ui mini test modal" id="messageModal3">
+		<div class="header">
+		  05/18/2020
+		</div>
+		<div class="content">
+		  <p>Your laundry is done!</p>
+		</div>
+		<div class="actions">
+		  
+		<button class="ui gray basic button" id="messageClosebtn3">
+			Close
+		</button>
+		</div>
+	</div>
+
+	<!-- Message Modal 4-->
+	<div class="ui mini test modal" id="messageModal4">
+		<div class="header">
+		  05/18/2020
+		</div>
+		<div class="content">
+		  <p>5 minutes left before your dryer is done!</p>
+		</div>
+		<div class="actions">
+		  
+		<button class="ui gray basic button" id="messageClosebtn4">
+			Close
+		</button>
+		</div>
+	</div>
+
+	<!-- Message Modal 5-->
+	<div class="ui mini test modal" id="messageModal5">
+		<div class="header">
+		  05/18/2020
+		</div>
+		<div class="content">
+		  <p>Today is your laundry day!</p>
+		</div>
+		<div class="actions">
+		  
+		<button class="ui gray basic button" id="messageClosebtn5">
+			Close
+		</button>
+		</div>
+	</div>
+
 	<!-- JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+
+	<!--This two line someohw made the dropdown not working-->
+
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script> -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 	<!-- Slick slider -->
     <script type="text/javascript" src="assets/js/slick.min.js"></script>
@@ -168,14 +326,17 @@
     <!-- Counter js -->
     <script type="text/javascript" src="assets/js/counter.js"></script>
     <!-- Ajax contact form  -->
-    <script type="text/javascript" src="assets/js/app.js"></script>
-    
-	
+	<script type="text/javascript" src="assets/js/app.js"></script>
+
     <!-- Custom js -->
 	<script type="text/javascript" src="assets/js/custom.js"></script>
-
-	<!-- About us Skills Circle progress  -->
-	<script>
+	<script src="alarm.js"></script>
+	<script src="messageModal.js"></script>
+	
+	
+	
+	<!--Just DELETED-->
+	<!-- <script>
 		// First circle
 	    new Circlebar({
         element : "#circle-1",
@@ -204,7 +365,7 @@
 	      maxValue:  "74"
 	    });
 
-	</script>
+	</script> -->
     
   </body>
 </html>
