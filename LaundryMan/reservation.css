@@ -100,7 +100,7 @@ Version: 1.0
 
  
   .hovereffect1{
-	width: 100%;
+	width: auto;
 	height: 100%;
 	float: left;
 	overflow: hidden;
@@ -158,7 +158,7 @@ Version: 1.0
   }
   
   .hovereffect {
-	width: 100%;
+	width: auto;
 	height: 100%;
 	float: left;
 	overflow: hidden;
