@@ -18,6 +18,8 @@
 	<!--Google Material Icons-->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	
+	
+	
 	<!--Let browser know website is optimized for mobile-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
@@ -344,6 +346,29 @@
 	<script src="alarm.js"></script>
 	<script src="messageModal.js"></script>
 	
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+	<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-analytics.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-firestore.js"></script>
+	<script>
+	// Your web app's Firebase configuration
+	var firebaseConfig = {
+		apiKey: "AIzaSyDxV9NBWvRG0Uj9LAyWbqiI7ynMYCZFlHs",
+		authDomain: "laundryman-90e01.firebaseapp.com",
+		databaseURL: "https://laundryman-90e01.firebaseio.com",
+		projectId: "laundryman-90e01",
+		storageBucket: "laundryman-90e01.appspot.com",
+		messagingSenderId: "1065622255921",
+		appId: "1:1065622255921:web:807763ec9251f2ee875810",
+		measurementId: "G-MF9FWK2CES"
+	};
+	// Initialize Firebase
+	firebase.initializeApp(firebaseConfig);
+	firebase.analytics();
+	</script>
 	
 	
 	<!--Just DELETED-->
