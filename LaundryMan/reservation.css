@@ -162,7 +162,7 @@ Version: 1.0
 	padding: 0.5em 0;
 	background-color: transparent;
   }
-  .hovereffect1 h3:after {
+/*   .hovereffect1 h3:after {
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -174,7 +174,7 @@ Version: 1.0
 	transition: transform 0.35s;
 	-webkit-transform: translate3d(-100%,0,0);
 	transform: translate3d(50%, 50%);
-  }
+  } */
   
   .hovereffect {
 	width: auto;
