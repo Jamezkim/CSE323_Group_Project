@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -18,8 +19,6 @@
 	<!--Google Material Icons-->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	
-	
-	
 	<!--Let browser know website is optimized for mobile-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
@@ -34,7 +33,6 @@
     <script src="semantic/semantic.js"></script>
     <!-- Main Style -->
     <link href="weekly.css" rel="stylesheet">
-    <link href="main.css" rel="stylesheet">
 
     <!-- Fonts -->
 
@@ -54,7 +52,7 @@
   	
   	<!-- Start Header -->
 	<header id="mu-hero">
-		<div class="container" style="margin-top: 12px; margin-bottom: 12px;">
+		<div class="container" style="margin-top: 12px; margin-bottom: 12px">
 			<nav class="navbar navbar-expand-lg navbar-light mu-navbar">
 				<!-- Text based logo -->
 				<a class="navbar-brand mu-logo" href="index.html"><span>LaundryMan</span></a>
@@ -66,11 +64,11 @@
 
 			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 			    <ul class="navbar-nav mr-auto mu-navbar-nav">
-			      <li class="nav-item active">
+			      <li class="nav-item">
 			        <a href="index.html">Home</a>
 			      </li>
 			      <li class="nav-item"><a href="laundromat.html">Laundromat</a></li>
-				  <li class="nav-item dropdown">
+				  <li class="nav-item dropdown active">
 					<a class="dropdown-toggle" href="#" role="button" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Alarm</a>
 				   <div class="dropdown-menu active" aria-labelledby="navbarDropdown">
 					  <a class="dropdown-item" href="alarm-setting.html">Alarm Setting</a>
@@ -116,128 +114,184 @@
 				  </li>
 				  
 				  <!--Notification Message-->
+				  
 			    </ul>
 			  </div>
 			</nav>
 		</div>
-    </header>
-    
-    <!-- Start slider area -->
-	<div id="mu-slider">
-		<div class="mu-slide">
-			<!-- Start single slide  -->
-			<div class="mu-single-slide">
-				<img src="assets/images/kwangmin_face.png" alt="slider img">
-				<div class="mu-single-slide-content-area">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-12">
-								<div class="mu-single-slide-content">
-									<h1>Welcome to LaundryMan</h1>
-									<p>We provide the best experience for your laundry</p>
-									<a class="mu-primary-btn" href="laundromat.html">Make Reservation Now <span class="fa fa-long-arrow-right"></span></a>
+	</header>
+
+	<!-- End Header -->
+	<main>
+		<div class="week_title" style="margin-top: 80px;">Weekly Reminder</div>
+		<br>
+		<br>	
+		<div class="row">
+			<div class="col text-center">
+				<div class="ui container">
+					<div class="ui styled fluid accordion">
+						<div class="title active"> 
+							<i class="material-icons" style="font-size:40px">calendar_today</i>
+							<span style="font-size:30px">Day</span>
+						</div>
+						<div class="content active">
+							<div class="daysButtons">
+								<div class="col text-center">
+									<div class="subtitle">
+									  What day should we reminder you?
+									</div>
+								</div>
+								<div class="row">
+									<div class="col text-center">
+									  <button type="button", id="mon">MON</button> 
+									  <button type="button", id="tue">TUE</button>
+									</div>
+								</div>
+								<br>
+								<div class="row">
+									<div class="col text-center">
+									  <button type="button", id="wed">WED</button>
+									  <button type="button", id="thu">THU</button>
+									</div>
+								</div>
+								<br>
+								<div class="row">
+									<div class="col text-center">
+									  <button type="button", id="fri">FRI </button>
+									  <button type="button", id="sat">SAT</button>
+									</div>
+								</div>
+								<br>
+								<div class="row">
+								  <div class="col text-center">
+									  <button type="button", id="sun">SUN</button>
+								  </div>
+							  </div>
+							  
+							</div>
+							<button type="button", class="next", id="daynext">Next &raquo;</button>
+							<br>
+						</div>
+						<div class="title">
+							<i class="material-icons" style="font-size:40px">access_alarms</i>
+							<span style="font-size:30px">Time</span>
+						</div>
+						<div class="content">
+							<div class="col text-center">
+								<div class="subtitle">
+								  What time should we reminder you?
 								</div>
 							</div>
+							<!--Dropdown for time-->
+							<div class="col text-center">
+								<select class="ui search dropdown">
+									<option value="">Select time</option>
+									<option value="0900">9:00</option>
+									<option value="0930">9:30</option>
+									<option value="1000">10:00</option>
+									<option value="1030">10:30</option>
+									<option value="1100">11:00</option>
+									<option value="1130">11:30</option>
+									<option value="1200">12:00</option>
+									<option value="1230">12:30</option>
+									<option value="1300">13:00</option>
+									<option value="1330">13:30</option>
+									<option value="1400">14:00</option>
+									<option value="1430">14:30</option>
+									<option value="1500">15:00</option>
+									<option value="1530">15:30</option>
+									<option value="1600">16:00</option>
+									<option value="1630">16:30</option>
+									<option value="1700">17:00</option>
+									<option value="1730">17:30</option>
+									<option value="1800">18:00</option>
+									<option value="1830">18:30</option>
+									<option value="1900">19:00</option>
+									<option value="1930">19:30</option>
+									<option value="2000">20:00</option>
+									<option value="2030">20:30</option>
+									<option value="2100">21:00</option>
+									<option value="2130">21:30</option>
+									<option value="2200">22:00</option>
+								</select>
+							</div>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							
+							<button type="button", class="next" id="timenext">Next &raquo;</button>
+							<button type="button", class="prev" id="timeprev">&laquo; Prev</button>
+							<br>
+						</div>
+						<div class="title">
+							<i class="material-icons" style="font-size:40px">contact_support</i>
+							<span style="font-size:30px">How</span>
+						</div>
+						<div class="content">
+							<div class="col text-center">
+								<div class="subtitle">
+								  How should we reminder you?
+								</div>
+							</div>
+							<div class="col text-center">
+								<div class="radio">
+									<label><input type="radio" name="optradio" checked>   By Email</label>
+								  </div>
+								  <div class="radio">
+									<label><input type="radio" name="optradio">   By Text Message</label>
+								</div>
+							</div>
+							<button type="button", class="save", id="savehow">Save</button>
+							<button type="button", class="prev", id="howprev">&laquo; Prev</button>
+							<br>
 						</div>
 					</div>
 				</div>
 			</div>
-			<!-- End single slide  -->
+		</div>
+	</main>
+	
+	<!-- Modals -->
+	<div class="ui basic modal", id="confirmModal">
+		<div class="ui icon header">
+		  <i class="material-icons" style="font-size: 100px">save</i>
+		  <div style="font-size:40px">Do you want to save?</div>
+		</div>
+		<div class="content">
+		</div>
+		<div class="actions">
+		  <div class="ui red basic cancel inverted button", id="noModalbtn">
+			<i class="remove icon"></i>
+			No
+		  </div>
+		  <div class="ui green ok inverted button" id="yesModalbtn">
+			<i class="checkmark icon"></i>
+			Yes
+		  </div>
 		</div>
 	</div>
-	<!-- End Slider area -->
-
-	
-	<!-- Start main content -->
-	<main>
-		<!-- Start About -->
-		<section id="mu-about">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="mu-about-area">
-							<!-- Title -->
-							<div class="row">
-								<div class="col-md-12">
-									<div class="mu-title">
-										<h2>About LaundryMan</h2>
-									</div>
-								</div>
-							</div>
-							<!-- Start Feature Content -->
-							<div class="row">
-								<div class="col-md-6">
-									<div class="mu-about-left">
-										<img class="" src="assets/images/mainLaundry.png" alt="img">
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="mu-about-right">
-										<ul>
-											<li>
-												<h3>Dips Your Laundry Machine! <br>(Reservation Status & Availability)</h3>
-												<p>
-													Tired of waiting for the laundry machine? You can see the availability of the laundry machines in the laundromat in advance!
- 													Additionally, you can reserve the laundry machine by simply clicking a few buttons!
-												</p>
-											</li>
-											<li>
-												<h3>Don't forget your laundry!<br>(Alarm Setting)</h3>
-												<p>
-													You can set the alarm by before and after the laundry is finished! 
-													You can be notified before the laundry is finished, as well as, in case you forget to take the laundry, 
-													we can also send you a notification after the laundry is finished!
-
-												</p>
-											</li>
-											<li>
-												<h3>Don't you forget your laundry day!<br>(Weekly Reminder)</h3>
-												<p>
-													We will send you a text message or email every week based on your laundry day setting!
-													Any day, any time, let us know when your special day is!
-												</p>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<!-- End Feature Content -->
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- End About -->
-			
-
-	</main>
-
-	
-	<style> 
+	<div class="ui basic modal", id="confirmModal2">
+		<div class="ui icon header">
+		  <i class="check circle outline icon" style="font-size: 100px"></i>
+		  <div style="font-size:40px">Your alarm is successfully saved!</div>
+		</div>
+		<div class="content">
+		</div>
+		<div class="actions">
+		  <div class="ui green ok inverted button" id="okModalbtn">
+			<i class="checkmark icon"></i>
+			OK
+		  </div>
+		</div>
+	</div>
+	<style>
 		.ui.mini.modal {
 			height:180px;
 			position: relative;
-		}
-		img:hover {
-		/* Start the shake animation and make the animation last for 0.5 seconds */
-			animation: shake 0.5s; 
-  
-			/* When the animation is finished, start again */
-			animation-iteration-count: infinite; 
-		}
-
-		@keyframes shake {
-			0% { transform: translate(1px, 1px) rotate(0deg); }
-			10% { transform: translate(-1px, -2px) rotate(-1deg); }
-			20% { transform: translate(-3px, 0px) rotate(1deg); }
-			30% { transform: translate(3px, 2px) rotate(0deg); }
-			40% { transform: translate(1px, -1px) rotate(1deg); }
-			50% { transform: translate(-1px, 2px) rotate(-1deg); }
-			60% { transform: translate(-3px, 1px) rotate(0deg); }
-			70% { transform: translate(3px, 1px) rotate(-1deg); }
-			80% { transform: translate(-1px, -1px) rotate(1deg); }
-			90% { transform: translate(1px, 2px) rotate(0deg); }
-			100% { transform: translate(1px, -2px) rotate(-1deg); }
 		}
 	
 	</style>
@@ -346,29 +400,6 @@
 	<script src="alarm.js"></script>
 	<script src="messageModal.js"></script>
 	
-	<!-- The core Firebase JS SDK is always required and must be listed first -->
-	<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-	<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-analytics.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-firestore.js"></script>
-	<script>
-	// Your web app's Firebase configuration
-	var firebaseConfig = {
-		apiKey: "AIzaSyDxV9NBWvRG0Uj9LAyWbqiI7ynMYCZFlHs",
-		authDomain: "laundryman-90e01.firebaseapp.com",
-		databaseURL: "https://laundryman-90e01.firebaseio.com",
-		projectId: "laundryman-90e01",
-		storageBucket: "laundryman-90e01.appspot.com",
-		messagingSenderId: "1065622255921",
-		appId: "1:1065622255921:web:807763ec9251f2ee875810",
-		measurementId: "G-MF9FWK2CES"
-	};
-	// Initialize Firebase
-	firebase.initializeApp(firebaseConfig);
-	firebase.analytics();
-	</script>
 	
 	
 	<!--Just DELETED-->

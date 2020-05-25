@@ -1,42 +1,138 @@
-/*=====
-Template Name: B-Hero	
-Author: MarkUps
-Author URI: http://www.markups.io/
-Version: 1.0
-=======*/
+/*Hasung css*/
 
 
-/* Table of Content
-==================================================
-#BASIC TYPOGRAPHY
-#HEADER	
-#MENUE
-#SLIDER
-#ABOUT US
-#CALL TO ACTION
-#SERVICE
-#VIDEO
-#PORTFOLIO
-#COUNTER
-#CLIENTS 
-#PRICING
-#TESTIMONIALS
-#NEWS LETTER
-#CLIENTS
-#GOOGLE MAP
-#FOOTER
-#ABOUT US 
-#BLOG PAGE
-#CONTACT US
-#404 ERROR PAGE
-#RESPONSIVE STYLE
-==========*/
+/*
+#########################
+#  Notification Counter #
+#########################
+ */  
+.nav-item .badge {
+	position: absolute;
+	top: -5px;
+	right: -5px;
+	padding: 5px 10px;
+	border-radius: 50%;
+	background: red;
+	color: white;
+	font-size: 10px;
+	
+}
+/*
+#########################
+#######   Alert   #######
+#########################
+*/
+.ui-alert-content{
+	position: fixed;
+	width: 360px;
+	z-index: 2060;
+}
+.ui-alert-content-top-right{
+	top: 20px;
+	right: 20px;
+}
+.ui-alert-content-top-center{
+	top: 20px;
+	margin: 0 0 0 -180px;
+	left: 50%;
+}
+.ui-alert-content-top-left{
+	top: 20px;
+	left: 20px;
+}
+.ui-alert-content-bottom-right{
+	bottom: 0;
+	right: 20px;
+}
+.ui-alert-content-bottom-center{
+	bottom: 0;
+	margin: 0 0 0 -180px;
+	left: 50%;
+}
+.ui-alert-content-bottom-left{
+	bottom: 0;
+	left: 20px;
+}
+.ui-alert {
+	opacity: 0;
+	filter: alpha(opacity=0);
+	
+}
+.ui-alert p{
+	display: table;
+}
 
 
-/*--------------------*/
-/* BASIC TYPOGRAPHY */
-/*--------------------*/
 
+/*
+#########################
+#######   Modal   #######
+#########################
+*/
+.ui.basic.modal {
+	position: relative;
+}
+.week_title {
+	font-family: 'Raleway', sans-serif;
+	
+	font-size: 64px;
+	line-height: 75px;
+	color: #0091ea;
+	float: left;
+	text-align: center;
+	width: 100%;
+	margin-top: 35px;
+	margin-bottom: 35px;
+	padding: 0 25%;
+}
+
+.subtitle {
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom: 35px;
+	color: black;
+	
+}
+
+
+/*
+#########################
+#####    Buttons    #####
+#########################
+*/
+.daysButtons button {
+	border-radius: 10px;
+	width:100px;
+	height:50px;
+	color: white;
+	background-color:#35B3FA;
+	margin-left: 15px;
+	margin-right: 15px;
+	cursor: pointer;
+	text-align: center;
+	font-size: 20px;
+	
+}
+
+.next, .prev, .save{
+	border-radius: 10px;
+	width:100px;
+	height: 40px;
+	color: white;
+	background-color:#35B3FA;
+	cursor: pointer;
+	float: right;
+	margin-right: 15px;
+
+}
+.radio {
+	
+}
+
+
+
+
+/*from style.css*/
 body,
 html {
 	overflow-x:hidden;
@@ -48,13 +144,7 @@ body {
 	font-size: 16px;
 	font-weight: 400;
 }
-.weekBox {	
-	position: absolute;
-	width: 2000px;
-	height: 633px;
-	left: 230px;
-	top: 266px;
-}
+
 ul {
 	padding: 0;
 	margin: 0;
@@ -145,7 +235,7 @@ kbd {
 	background-color: #ddd;
 	padding: 4px 6px;
 	border-radius: 2px;
-	/* color:  */
+	
 }
 
 address {
@@ -200,7 +290,6 @@ iframe {
 	text-transform: uppercase;
 	font-weight: 700;
 	border-radius: 25px;
-	cursor: pointer;
 }
 
 .mu-primary-btn:hover,
@@ -482,6 +571,7 @@ a:focus,
 	z-index: 99;
 	padding: 12% 16%;
 }
+
 .mu-single-slide-content {
 	display: inline;
 	float: left;
@@ -695,10 +785,6 @@ a:focus,
 	line-height: 48px;
 	margin-right: 20px;
 }
-/* 
-.mu-pricing-single-icon-1 .fa{
-
-} */
 
 .mu-single-service-icon .fa {
 	
@@ -1107,8 +1193,8 @@ a:focus,
 	width: 100%;
 	padding-bottom: 30px;
 }
-/* size of icons */
-.mu-pricing-single-icon span {   
+
+.mu-pricing-single-icon span {
 	color: #0277bd;
 	font-size: 60px;
 }
@@ -1186,7 +1272,7 @@ a:focus,
 	padding: 50px 0 40px;
 }
 
-.mu-standard-pricing .mu-single-pricebox {
+.mu-standard-pricing .mu-single-pricebox {;
 	padding: 5px 0 40px;
 }
 
@@ -1654,7 +1740,7 @@ a:focus,
 .mu-page-header-area {
 	display: inline;
 	float: left;
-	padding: 75px 0;
+	padding: 150px 0;
 	width: 100%;
 	position: relative;
 	z-index: 20;
@@ -3058,7 +3144,7 @@ a:focus,
 	.mu-buy-now-btn,
 	.mu-standard-pricing .mu-buy-now-btn {
 		font-size: 16px;
-		padding: 15px 25px;
+		padding: 8px 25px;
 	}
 
 	.mu-standard-pricing .mu-pricing-single {
@@ -3592,37 +3678,6 @@ a:focus,
 		padding: 10px 0;
 	}
 
-	.laundrymachines{
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		width: 50%;
-		/* align-content: center; */
-	}
-	
-	div.center {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		width: 50%;
-	}
-	 
-	a {
-		text-decoration: #3d7cf0;
-		display: contents;
-		padding: 8px 16px;
-	  }
-
-	.next {
-		background-color: #f1f1f1;
-		color: black;
-	}  
-	next:hover{
-		background-color: blue;
-		/* color: black; */
-	}
-
-
 	.mu-single-team-img,
 	.mu-single-team-content {
 		width: 100%;
@@ -3740,210 +3795,4 @@ a:focus,
 	}
 	
 	
-}
-
-.slidecontainer {
-	width: 100%; /* Width of the outside container */
-  }
-  
-  /* The slider itself */
-  .slider {
-	-webkit-appearance: none;  /* Override default CSS styles */
-	appearance: none;
-	width: 100%; /* Full-width */
-	height: 25px; /* Specified height */
-	background: #d3d3d3; /* Grey background */
-	outline: none; /* Remove outline */
-	opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
-	-webkit-transition: .2s; /* 0.2 seconds transition on hover */
-	transition: opacity .2s;
-  }
-  
-  /* Mouse-over effects */
-  .slider:hover {
-	opacity: 1; /* Fully shown on mouse-over */
-  }
-  
-  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
-  .slider::-webkit-slider-thumb {
-	-webkit-appearance: none; /* Override default look */
-	appearance: none;
-	width: 25px; /* Set a specific slider handle width */
-	height: 25px; /* Slider handle height */
-	background: #0091ea; /* Blue background */
-	cursor: pointer; /* Cursor on hover */
-  }
-  
-  .slider::-moz-range-thumb {
-	width: 25px; /* Set a specific slider handle width */
-	height: 25px; /* Slider handle height */
-	background: #0091ea; /* Blue background */
-	cursor: pointer; /* Cursor on hover */
-  }
-
-  /* The Modal (background) */
-.modal {
-	display: none; /* Hidden by default */
-	position: fixed; /* Stay in place */
-	z-index: 1; /* Sit on top */
-	padding-top: 100px; /* Location of the box */
-	left: 0;
-	top: 0;
-	width: 100%; /* Full width */
-	height: 100%; /* Full height */
-	overflow: auto; /* Enable scroll if needed */
-	background-color: rgb(0,0,0); /* Fallback color */
-	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  /* Modal Content */
-  .modal-content {
-	background-color: #fefefe;
-	margin: auto;
-	padding: 250px;
-	border: 2px solid #0091ea;
-	width: 80%;
-  }
-  
-  /* The Close Button */
-  .close {
-	color: #868686;
-	float: right;
-	font-size: 50px;
-	font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-	color: #000;
-	text-decoration: none;
-	cursor: pointer;
-  }
-  
-  .button-cover, .knobs, .layer
-  {
-	  position: absolute;
-	  top: 0;
-	  right: 0;
-	  bottom: 0;
-	  left: 0;
-  }
-  
-  .button
-  {
-	  position: relative;
-	  top: 50%;
-	  width: 74px;
-	  height: 36px;
-	  margin: -20px auto 0 auto;
-	  overflow: hidden;
-  }
-  
-  .button.r, .button.r .layer
-  {
-	  border-radius: 100px;
-  }
-  
-  .button.b2
-  {
-	  border-radius: 2px;
-  }
-  
-  .checkbox
-  {
-	  position: relative;
-	  width: 130%;
-	  height: 100%;
-	  padding: 0;
-	  margin: 0;
-	  opacity: 0;
-	  cursor: pointer;
-	  z-index: 3;
-  }
-  
-  .knobs
-  {
-	  z-index: 2;
-  }
-  
-  .layer
-  {
-	  width: 100%;
-	  background-color: #ebf7fc;
-	  transition: 0.3s ease all;
-	  z-index: 1;
-  }
-  
-  /* Button 1 */
-  #button-1 .knobs:before
-  {
-	  content: 'ON';
-	  position: absolute;
-	  top: 2px;
-	  left: 4px;
-	  width: 30px;
-	  height: 30px;
-	  color: #fff;
-	  font-size: 12px;
-	  font-weight: bold;
-	  text-align: center;
-	  line-height: 1;
-	  padding: 9px 4px;
-	  background-color: #03A9F4;
-	  border-radius: 50%;
-	  transition: 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
-  }
-  
-  #button-1 .checkbox:checked + .knobs:before
-  {
-	  content: 'OFF';
-	  left: 42px;
-	  background-color: #f44336;
-  }
-  
-  #button-1 .checkbox:checked ~ .layer
-  {
-	  background-color: #fcebeb;
-  }
-  
-  #button-1 .knobs, #button-1 .knobs:before, #button-1 .layer
-  {
-	  transition: 0.3s ease all;
-  }
-
-/* Button 2 */
-#button-2 .knobs:before
-{
-	content: 'ON';
-	position: absolute;
-	top: 2px;
-	left: 4px;
-	width: 30px;
-	height: 30px;
-	color: #fff;
-	font-size: 12px;
-	font-weight: bold;
-	text-align: center;
-	line-height: 1;
-	padding: 9px 4px;
-	background-color: #03A9F4;
-	border-radius: 50%;
-	transition: 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
-}
-
-#button-2 .checkbox:checked + .knobs:before
-{
-	content: 'OFF';
-	left: 42px;
-	background-color: #f44336;
-}
-
-#button-2 .checkbox:checked ~ .layer
-{
-	background-color: #fcebeb;
-}
-
-#button-2 .knobs, #button-2 .knobs:before, #button-2 .layer
-{
-	transition: 0.3s ease all;
-}
+}	

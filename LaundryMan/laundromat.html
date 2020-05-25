@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -18,8 +19,6 @@
 	<!--Google Material Icons-->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	
-	
-	
 	<!--Let browser know website is optimized for mobile-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
@@ -33,8 +32,8 @@
 		</script>
     <script src="semantic/semantic.js"></script>
     <!-- Main Style -->
-    <link href="weekly.css" rel="stylesheet">
-    <link href="main.css" rel="stylesheet">
+	<link href="reservation.css" rel="stylesheet">
+	<link href="weekly.css" rel="stylesheet">
 
     <!-- Fonts -->
 
@@ -54,7 +53,7 @@
   	
   	<!-- Start Header -->
 	<header id="mu-hero">
-		<div class="container" style="margin-top: 12px; margin-bottom: 12px;">
+		<div class="container" style="margin-top: 12px; margin-bottom: 12px">
 			<nav class="navbar navbar-expand-lg navbar-light mu-navbar">
 				<!-- Text based logo -->
 				<a class="navbar-brand mu-logo" href="index.html"><span>LaundryMan</span></a>
@@ -66,10 +65,10 @@
 
 			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 			    <ul class="navbar-nav mr-auto mu-navbar-nav">
-			      <li class="nav-item active">
+			      <li class="nav-item">
 			        <a href="index.html">Home</a>
 			      </li>
-			      <li class="nav-item"><a href="laundromat.html">Laundromat</a></li>
+			      <li class="nav-item  active"><a href="laundromat.html">Laundromat</a></li>
 				  <li class="nav-item dropdown">
 					<a class="dropdown-toggle" href="#" role="button" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Alarm</a>
 				   <div class="dropdown-menu active" aria-labelledby="navbarDropdown">
@@ -116,132 +115,174 @@
 				  </li>
 				  
 				  <!--Notification Message-->
+				  
 			    </ul>
 			  </div>
 			</nav>
 		</div>
-    </header>
-    
-    <!-- Start slider area -->
-	<div id="mu-slider">
-		<div class="mu-slide">
-			<!-- Start single slide  -->
-			<div class="mu-single-slide">
-				<img src="assets/images/kwangmin_face.png" alt="slider img">
-				<div class="mu-single-slide-content-area">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-12">
-								<div class="mu-single-slide-content">
-									<h1>Welcome to LaundryMan</h1>
-									<p>We provide the best experience for your laundry</p>
-									<a class="mu-primary-btn" href="laundromat.html">Make Reservation Now <span class="fa fa-long-arrow-right"></span></a>
-								</div>
-							</div>
+	</header>
+
+	<main>
+<!-- <div id="mu-page-header"> -->
+		<div class="week_title" style="margin-top: 80px;">Check and Reserve</div>
+		<div class="row">
+			<div class="col text-center">
+				<div class="ui container">
+					<h3 style="text-align: center">Operation Time: 08:00~24:00 AM</h3>
+					<p>Date/Time: <span id="datetime"></span></p><script>var dt = new Date();
+							document.getElementById("datetime").innerHTML=dt.toLocaleString();</script>
+				</div>
+			</div>
+		</div>	
+	</main>
+		
+		<div class="container" style="margin-top:30px;" class="col text-center">
+			<div class="row">
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<div class="hovereffect">
+						<img class="img-responsive" id="ava1" src="assets/images/laundryM.jpg" alt="" onclick="reservation()">
+						<div class="overlay">
+						
+						<h3>Available</h3>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<div class="hovereffect">
+						<img class="img-responsive" id="ava2" src="assets/images/laundryM.jpg" alt="" onclick="reservation()">
+						<div class="overlay">
+							<h3>Available</h3>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<div class="hovereffect1">
+						<img class="img-responsive" id="unava1" src="assets/images/laundryM.jpg" alt="" onclick="reservationx()">
+						<div class="overlay">
+							<div class="countdown2"></div>
+							<h3>Unvailable</h3>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<div class="hovereffect">
+						<img class="img-responsive" id="ava3" src="assets/images/laundryM.jpg" alt="" onclick="reservation()">
+						<div class="overlay">
+							<h3>Available</h3>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<div class="hovereffect">
+						<img class="img-responsive" id="ava4" src="assets/images/laundryM.jpg" alt="" onclick="reservation()">
+						<div class="overlay">
+							<h3>Available</h3>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<div class="hovereffect1">
+						<img class="img-responsive" id="unava2" src="assets/images/laundryM.jpg" alt="" onclick="reservationx()">
+						<div class="overlay">
+							<h3>Unvailable</h3>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<div class="hovereffect1">
+						<img class="img-responsive" id="unava3" src="assets/images/laundryM.jpg" alt="" onclick="reservationx()">
+						<div class="overlay">
+							<h3>Unvailable</h3>	
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<div class="hovereffect">
+						<img class="img-responsive" id="ava4" src="assets/images/laundryM.jpg" alt="" onclick="reservation()">
+						<div class="overlay">
+							<h3>Available</h3>
 						</div>
 					</div>
 				</div>
 			</div>
-			<!-- End single slide  -->
+			<br>
+			<br>
+
+		</div>
+			
+	<script>
+		function reservation() {
+			document.getElementById("reservation-btn").style.border = '3px solid black';
+			document.getElementById("reservation-btn").style.border = '3px solid black';
+			document.getElementById("reservation-btn").style.border = '3px solid black';
+			document.getElementById("reservation-btn").style.border = '3px solid black';
+		}
+
+		function reservationx(){
+			document.getElementById("reservation-btn").style.color = "white";
+			document.getElementById("reservation-btn").style.border = "none";
+		}
+			
+	</script>
+
+	<div class="row" style="margin-bottom: 70px">
+		<div class="col text-center">
+				<button class="button10" id="reservation-btn" >Reserve</button>
+				<!-- <button class="btn info" id="reservation-btn">Reserve</button> -->
 		</div>
 	</div>
-	<!-- End Slider area -->
-
 	
-	<!-- Start main content -->
-	<main>
-		<!-- Start About -->
-		<section id="mu-about">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="mu-about-area">
-							<!-- Title -->
-							<div class="row">
-								<div class="col-md-12">
-									<div class="mu-title">
-										<h2>About LaundryMan</h2>
-									</div>
-								</div>
-							</div>
-							<!-- Start Feature Content -->
-							<div class="row">
-								<div class="col-md-6">
-									<div class="mu-about-left">
-										<img class="" src="assets/images/mainLaundry.png" alt="img">
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="mu-about-right">
-										<ul>
-											<li>
-												<h3>Dips Your Laundry Machine! <br>(Reservation Status & Availability)</h3>
-												<p>
-													Tired of waiting for the laundry machine? You can see the availability of the laundry machines in the laundromat in advance!
- 													Additionally, you can reserve the laundry machine by simply clicking a few buttons!
-												</p>
-											</li>
-											<li>
-												<h3>Don't forget your laundry!<br>(Alarm Setting)</h3>
-												<p>
-													You can set the alarm by before and after the laundry is finished! 
-													You can be notified before the laundry is finished, as well as, in case you forget to take the laundry, 
-													we can also send you a notification after the laundry is finished!
+	<script>
+		$("#reservation-btn").click(function() {
+		$('#reserve').modal('show');
+		})
+		$("#confirmation").click(function() {
+		$('#reserve').modal('show');
+		})
+	</script>
 
-												</p>
-											</li>
-											<li>
-												<h3>Don't you forget your laundry day!<br>(Weekly Reminder)</h3>
-												<p>
-													We will send you a text message or email every week based on your laundry day setting!
-													Any day, any time, let us know when your special day is!
-												</p>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<!-- End Feature Content -->
-						</div>
-					</div>
+	<div class="ui modal" id="reserve">
+			<i class="close icon"></i>
+				<div class="header">
+			  		Reservation Rules
 				</div>
+				<div class="image content">
+			  		<div class="ui medium image">
+						<img src="assets/images/laundryM.jpg">
+			  		</div>
+			  	<div class="description">
+					<div class="ui header"></div>
+						<p>1. Please do not be late when you reserve <a href="https://www.gravatar.com" target="_blank"></a></p>
+						<p>2. If you do not show up in 10 mintunes, you will not be allowed to use the machine for 30 minutes </p>
+						<p>3. Please check your machine before you use</p>
+						<p>4. Please take your clothings as soon as possible when it is finished</p>
+						<p>5. Please do not break any machine</p>
+						
+			  		</div>
+				</div>
+			<div class="actions">
+			  <div class="ui black deny button">
+				Go back
+			  </div>
+			<div class="ui positive right labeled icon button" id="confirmation">
+				Confirm
+					<i class="checkmark icon" ></i>
 			</div>
-		</section>
-		<!-- End About -->
-			
-
-	</main>
-
-	
-	<style> 
+			</div>
+		</div>	
+	<style>
 		.ui.mini.modal {
-			height:180px;
+			height: 180px;
+			position: relative;
+		}	
+		
+		.ui.modal{
+			height: 415px;
 			position: relative;
 		}
-		img:hover {
-		/* Start the shake animation and make the animation last for 0.5 seconds */
-			animation: shake 0.5s; 
-  
-			/* When the animation is finished, start again */
-			animation-iteration-count: infinite; 
-		}
-
-		@keyframes shake {
-			0% { transform: translate(1px, 1px) rotate(0deg); }
-			10% { transform: translate(-1px, -2px) rotate(-1deg); }
-			20% { transform: translate(-3px, 0px) rotate(1deg); }
-			30% { transform: translate(3px, 2px) rotate(0deg); }
-			40% { transform: translate(1px, -1px) rotate(1deg); }
-			50% { transform: translate(-1px, 2px) rotate(-1deg); }
-			60% { transform: translate(-3px, 1px) rotate(0deg); }
-			70% { transform: translate(3px, 1px) rotate(-1deg); }
-			80% { transform: translate(-1px, -1px) rotate(1deg); }
-			90% { transform: translate(1px, 2px) rotate(0deg); }
-			100% { transform: translate(1px, -2px) rotate(-1deg); }
-		}
-	
 	</style>
-	<!-- Message Modal 1 -->
+
+
 	<div class="ui mini test modal" id="messageModal1">
 		<div class="header">
 		  Today
@@ -319,12 +360,73 @@
 		</div>
 	</div>
 
-	<!-- JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+	<div class="ui basic modal", id="confirmModal2">
+		<div class="ui icon header">
+			<i class="check circle outline icon" style="font-size: 100px"></i>
+			<div style="font-size:40px">Your reservation is successfully saved!</div>
+		</div>
+		<div class="content">
+		</div>
+		<div class="actions">
+			<div class="ui green ok inverted button" id="okay"><a href="laundromat2.html"></a>
+				<i class="checkmark icon"></i>
+					OK
+			</div>
+		</div>
+	</div>
+	<script>
+		$("#okay").click(function() {
+    			window.location.href="index.html";
+  		})
+	</script>
+	<!--TIME SHOWING-->
+	<script>
+		$('.rapid.example .ui.button')
+  		.on('click', function() {
+    	var
+      	$progress       = $('.rapid.example .ui.progress'),
+      	$button         = $(this),
+      	updateEvent
+    ;
+    // restart to zero
+    clearInterval(window.fakeProgress)
+    $progress.progress('reset');
+     // updates every 10ms until complete
+    window.fakeProgress = setInterval(function() {
+      $progress.progress('increment');
+      $button.text( $progress.progress('get value') );
+      // stop incrementing when complete
+      if($progress.progress('is complete')) {
+        clearInterval(window.fakeProgress)
+      }
+    }, 10);
+  })
+;
+	$('.rapid.example .ui.progress')
+	.progress({
+		duration : 200,
+		total    : 200,
+		text     : {
+		active: '{value} of {total} done'
+		}
+	})
+	;
+	</script>
+
+	<script>
+		$("#confirmation").click(function() {
+		$('#confirmModal2').modal('show');
+		})
+	</script>
+
+	<!-- // JavaScript -->
+	<!-- // jQuery first, then Popper.js, then Bootstrap JS -->
 
 
-	<!--This two line someohw made the dropdown not working-->
+	<!-- // This two line someohw made the dropdown not working -->
 
+	</script>
 	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script> -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
@@ -346,62 +448,39 @@
 	<script src="alarm.js"></script>
 	<script src="messageModal.js"></script>
 	
-	<!-- The core Firebase JS SDK is always required and must be listed first -->
-	<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-	<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-analytics.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-firestore.js"></script>
 	<script>
-	// Your web app's Firebase configuration
-	var firebaseConfig = {
-		apiKey: "AIzaSyDxV9NBWvRG0Uj9LAyWbqiI7ynMYCZFlHs",
-		authDomain: "laundryman-90e01.firebaseapp.com",
-		databaseURL: "https://laundryman-90e01.firebaseio.com",
-		projectId: "laundryman-90e01",
-		storageBucket: "laundryman-90e01.appspot.com",
-		messagingSenderId: "1065622255921",
-		appId: "1:1065622255921:web:807763ec9251f2ee875810",
-		measurementId: "G-MF9FWK2CES"
-	};
-	// Initialize Firebase
-	firebase.initializeApp(firebaseConfig);
-	firebase.analytics();
+	function countdown( elementName, minutes, seconds )
+	{
+    	var element, endTime, hours, mins, msLeft, time;
+
+    function twoDigits( n )
+    {
+        return (n <= 9 ? "0" + n : n);
+    }
+
+    function updateTimer()
+    {
+        msLeft = endTime - (+new Date);
+        if ( msLeft < 1000 ) {
+            element.innerHTML = "countdown's over!";
+        } else {
+            time = new Date( msLeft );
+            hours = time.getUTCHours();
+            mins = time.getUTCMinutes();
+            element.innerHTML = (hours ? hours + ':' + twoDigits( mins ) : mins) + ':' + twoDigits( time.getUTCSeconds() );
+            setTimeout( updateTimer, time.getUTCMilliseconds() + 500 );
+        }
+    }
+
+    element = document.getElementById( elementName );
+    endTime = (+new Date) + 1000 * (60*minutes + seconds) + 500;
+    updateTimer();
+}
+
+
+countdown( "countdown2", 50, 0 );
 	</script>
 	
-	
-	<!--Just DELETED-->
-	<!-- <script>
-		// First circle
-	    new Circlebar({
-        element : "#circle-1",
-        type : "progress",
-	      maxValue:  "90"
-	    });
-		
-		// Second circle
-	    new Circlebar({
-        element : "#circle-2",
-        type : "progress",
-	      maxValue:  "84"
-	    });
-
-	    // Third circle
-	    new Circlebar({
-        element : "#circle-3",
-        type : "progress",
-	      maxValue:  "60"
-	    });
-
-	    // Fourth circle
-	    new Circlebar({
-        element : "#circle-4",
-        type : "progress",
-	      maxValue:  "74"
-	    });
-
-	</script> -->
     
   </body>
 </html>
