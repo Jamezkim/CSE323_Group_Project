@@ -32,6 +32,10 @@ Version: 1.0
 #RESPONSIVE STYLE
 ==========*/
 
+#center{
+	text-align: center;
+}
+
 
 @keyframes shake {
     0% { transform: translate(1px, 1px) rotate(0deg); }
@@ -57,7 +61,7 @@ Version: 1.0
 	cursor: pointer;
 	outline: none;
 	color: #fff;
-	background-color: #0080ff;
+	background-color: grey;
 	border: 50px;
 	border-radius: 15px;
 	box-shadow: 0 9px #999;
@@ -83,7 +87,7 @@ Version: 1.0
 
 
 #reservation-btn {
-	background-color:#0080ff; /* Green */
+	background-color:grey; /* Green */
 	border: black;
 	color: white;
 	padding: 15px 32px;
@@ -115,7 +119,7 @@ Version: 1.0
  
   .hovereffect1{
 	width: auto;
-	height: 100%;
+	height: auto;
 	float: left;
 	overflow: hidden;
 	position: relative;
@@ -124,10 +128,16 @@ Version: 1.0
 	background: red;
 	border-radius: 23px;
 	/* Start the shake animation and make the animation last for 0.5 seconds */
-	animation: shake 0.5s; 
+
   
 	/* When the animation is finished, start again */
-	animation-iteration-count: infinite; 
+
+  }
+  .hovereffect1 .test{
+	/* animation: shake 0.5s; 
+	animation-iteration-count: infinite;  */
+
+	
   }
 
 /* 
@@ -149,6 +159,11 @@ Version: 1.0
 	filter: alpha(opacity=40);
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
+	/* background:red;  */
+	animation: shake 0.5s; 
+	animation-iteration-count: infinite;
+	
+
   }
 
 
@@ -157,7 +172,7 @@ Version: 1.0
 	color: #fff;
 	text-align: center;
 	position: relative;
-	font-size: 13px;
+	font-size: 16px;
 	overflow: hidden;
 	padding: 0.5em 0;
 	background-color: transparent;
@@ -219,7 +234,7 @@ Version: 1.0
 	color: #fff;
 	text-align: center;
 	position: relative;
-	font-size: 13px;
+	font-size: 16px;
 	overflow: hidden;
 	padding: 0.5em 0;
 	background-color: transparent;
