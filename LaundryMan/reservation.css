@@ -32,6 +32,11 @@ Version: 1.0
 #RESPONSIVE STYLE
 ==========*/
 
+.img-responsive{
+	margin-left: auto;
+margin-right: auto;
+}
+
 #center{
 	text-align: center;
 }
@@ -131,8 +136,49 @@ Version: 1.0
 
   
 	/* When the animation is finished, start again */
+  }
+
+
+  .hovereffect2 {
+	animation: shake 1.5s; 
+	animation-iteration-count: infinite;
+	width: auto;
+	height: auto;
+	float: left;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	cursor: default;
+	background: red;
+	border-radius: 23px;
+	
+  }
+
+  .hovereffect2 h3 {
+	text-transform: uppercase;
+	color: #fff;
+	text-align: center;
+	position: relative;
+	font-size: 16px;
+	overflow: hidden;
+	padding: 0.5em 0;
+	/* background: red; */
+	background-color: transparent;
+  }
+
+  .hovereffect2:hover img {
+	opacity: 0.4;
+	filter: alpha(opacity=40);
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+	background:red; 
+	/* animation: shake 0.5s; 
+	animation-iteration-count: infinite; */
+	
 
   }
+
+
   .hovereffect1 .test{
 	/* animation: shake 0.5s; 
 	animation-iteration-count: infinite;  */
@@ -647,6 +693,7 @@ a:focus,
 
 .mu-navbar {
 	padding: 20px 0;
+	height: 80px;
 }
 
 .mu-navbar-nav {
