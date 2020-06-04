@@ -5,7 +5,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>LaundryMan: Don't wait anymore</title>
+	<title>LaundryMan: Don't wait anymore</title>
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/icon" href="assets/images/favicon.ico"/>
     <!-- Font Awesome -->
@@ -283,7 +284,13 @@
 						</div>
 					</div>
 				  </li>
-				  
+				  <a href="account.html"><i class='far fa-user-circle' style="font-size: 40px; padding-left:15px;">
+					<style>
+						.far.fa-user-circle{
+							color:white;
+						
+						}
+					</style></i></a>
 				  <!--Notification Message-->
 				  
 			    </ul>
@@ -365,8 +372,7 @@
 							</div>
 							<div class="col-md-12" style="text-align: center;">
 								<div style="margin-top: -15px;" class="radio">
-									<label><input type="radio" id="radio1" onclick="undisableTxt()" name="optradio">   By Email: </label>
-									<input id="emailaddr" type="text" placeholder="Write your email" disabled/>
+									<label><input type="radio" id="radio1" onclick="undisableTxt()" name="optradio">   By Email</label>
 								</div>
 								<div class="radio">
 									<label><input type="radio" id="radio2" onclick="disableTxt()" name="optradio">   By Text Message</label>
@@ -638,30 +644,11 @@
 
 	<script>
 		function sendEmail() {
-			var emailaddr = document.getElementById("emailaddr")
-
-			// if (emailaddr.disabled == false) {
-			// 	if (emailaddr.value.length > 0) {
-			// 		Email.send({
-			// 		Host: "smtp.elasticemail.com",
-			// 		Username : "laundryman.kf90@gmail.com",
-			// 		Password : "8996F4FF5E3954C3ABB3E6A58ED6E2062E83",
-			// 		To : emailaddr.value,
-			// 		From : "laundryman.kf90@gmail.com",
-			// 		Subject : "[LaundryMan] Test Alarm",
-			// 		Body : "This email is to test the alarm notification function.",
-			// 		})
-			// 	} else {
-
-			// 	}
-				
-			// }
-
 			Email.send({
 				Host: "smtp.elasticemail.com",
 				Username : "laundryman.kf90@gmail.com",
 				Password : "8996F4FF5E3954C3ABB3E6A58ED6E2062E83",
-				To : emailaddr.value,
+				To : 'kwangmin.kim@stonybrook.edu',
 				From : "laundryman.kf90@gmail.com",
 				Subject : "[LaundryMan] Test Alarm",
 				Body : "This email is to test the alarm notification function.",
