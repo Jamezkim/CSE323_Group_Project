@@ -5,7 +5,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>LaundryMan: Don't wait anymore</title>
+	<title>LaundryMan: Don't wait anymore</title>
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/icon" href="assets/images/favicon.ico"/>
     <!-- Font Awesome -->
@@ -51,8 +52,7 @@
     </a>
   <!-- END SCROLL TOP BUTTON -->
   	
-  	<!-- Start Header -->
-	<header id="mu-hero">
+  	<!-- Start Header --><header id="mu-hero">
 		<div class="container" style="margin-top: 12px; margin-bottom: 12px">
 			<nav class="navbar navbar-expand-lg navbar-light mu-navbar">
 				<!-- Text based logo -->
@@ -68,8 +68,8 @@
 			      <li class="nav-item">
 			        <a href="index.html">Home</a>
 			      </li>
-			      <li class="nav-item  active"><a href="laundromat.html">Laundromat</a></li>
-				  <li class="nav-item dropdown">
+			      <li class="nav-item"><a href="laundromat.html">Laundromat</a></li>
+				  <li class="nav-item dropdown active">
 					<a class="dropdown-toggle" href="#" role="button" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Alarm</a>
 				   <div class="dropdown-menu active" aria-labelledby="navbarDropdown">
 					  <a class="dropdown-item" href="alarm-setting.html">Alarm Setting</a>
@@ -113,8 +113,15 @@
 						</div>
 					</div>
 				  </li>
-				  
-				  <!--Notification Message-->
+				  <a href="account.html"><i class='far fa-user-circle' style="font-size: 40px; padding-left:15px;">
+					<style>
+						.far.fa-user-circle{
+							color:white;
+						
+						}
+					</style></i></a>
+				   
+				  <!-- <!—Notification Message—> -->
 				  
 			    </ul>
 			  </div>
@@ -125,12 +132,13 @@
 	<main>
 <!-- <div id="mu-page-header"> -->
 		<div class="week_title" style="margin-top: 80px;">Check and Reserve</div>
+		<h2 id="center" style="color: #0091ea;">AT: Kuhn's SUNY Laundromat</h2>
 		<div class="row">
 			<div class="col text-center">
 				<div class="ui container">
 					<h3 style="text-align: center">Operation Time: 08:00~24:00 AM</h3>
 					<p>Date/Time: <span id="datetime"></span></p><script>var dt = new Date();
-							document.getElementById("datetime").innerHTML=dt.toLocaleString();</script>
+							document.getElementById("datetime").innerHTML=dt.toString();</script>
 				</div>
 			</div>
 		</div>	
@@ -142,8 +150,7 @@
 					<div class="hovereffect">
 						<img class="img-responsive" id="ava1" src="assets/images/laundryM.jpg" alt="" onclick="reservation()">
 						<div class="overlay">
-						
-						<h3>Available</h3>
+						<h3>NO.1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Available</h3>
 						</div>
 					</div>
 				</div>
@@ -151,16 +158,18 @@
 					<div class="hovereffect">
 						<img class="img-responsive" id="ava2" src="assets/images/laundryM.jpg" alt="" onclick="reservation()">
 						<div class="overlay">
-							<h3>Available</h3>
+							<h3>NO.2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Available</h3>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
 					<div class="hovereffect1">
+						<div class="test">
 						<img class="img-responsive" id="unava1" src="assets/images/laundryM.jpg" alt="" onclick="reservationx()">
+					</div>
 						<div class="overlay">
 							<div class="countdown2"></div>
-							<h3>Unvailable</h3>
+							<h3>NO.3 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unavailable</h3>
 						</div>
 					</div>
 				</div>
@@ -168,15 +177,16 @@
 					<div class="hovereffect">
 						<img class="img-responsive" id="ava3" src="assets/images/laundryM.jpg" alt="" onclick="reservation()">
 						<div class="overlay">
-							<h3>Available</h3>
+							<h3>NO.4 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Available</h3>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
 					<div class="hovereffect">
+						
 						<img class="img-responsive" id="ava4" src="assets/images/laundryM.jpg" alt="" onclick="reservation()">
 						<div class="overlay">
-							<h3>Available</h3>
+							<h3>NO.5 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Available</h3>
 						</div>
 					</div>
 				</div>
@@ -184,7 +194,7 @@
 					<div class="hovereffect1">
 						<img class="img-responsive" id="unava2" src="assets/images/laundryM.jpg" alt="" onclick="reservationx()">
 						<div class="overlay">
-							<h3>Unvailable</h3>
+							<h3>NO.6 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unavailable</h3>
 						</div>
 					</div>
 				</div>
@@ -192,7 +202,7 @@
 					<div class="hovereffect1">
 						<img class="img-responsive" id="unava3" src="assets/images/laundryM.jpg" alt="" onclick="reservationx()">
 						<div class="overlay">
-							<h3>Unvailable</h3>	
+							<h3>NO.7 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unavailable</h3>	
 						</div>
 					</div>
 				</div>
@@ -200,7 +210,7 @@
 					<div class="hovereffect">
 						<img class="img-responsive" id="ava4" src="assets/images/laundryM.jpg" alt="" onclick="reservation()">
 						<div class="overlay">
-							<h3>Available</h3>
+							<h3>NO.8 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Available</h3>
 						</div>
 					</div>
 				</div>
@@ -212,22 +222,20 @@
 			
 	<script>
 		function reservation() {
-			document.getElementById("reservation-btn").style.border = '3px solid black';
-			document.getElementById("reservation-btn").style.border = '3px solid black';
-			document.getElementById("reservation-btn").style.border = '3px solid black';
-			document.getElementById("reservation-btn").style.border = '3px solid black';
+			
+			document.getElementById("reservation-btn").style.backgroundColor = '#0080ff'; document.getElementById("reservation-btn").style.border = '3px solid black';
 		}
 
 		function reservationx(){
-			document.getElementById("reservation-btn").style.color = "white";
-			document.getElementById("reservation-btn").style.border = "none";
+			document.getElementById("reservation-btn").style.color = "white"; document.getElementById("reservation-btn").style.backgroundColor = "grey";
+			document.getElementById("reservation-btn").style.border = "white";
 		}
 			
 	</script>
 
 	<div class="row" style="margin-bottom: 70px">
 		<div class="col text-center">
-				<button class="button10" id="reservation-btn" >Reserve</button>
+				<button class="button10" id="reservation-btn" >Reserve Now!</button>
 				<!-- <button class="btn info" id="reservation-btn">Reserve</button> -->
 		</div>
 	</div>
@@ -369,7 +377,7 @@
 		<div class="content">
 		</div>
 		<div class="actions">
-			<div class="ui green ok inverted button" id="okay"><a href="laundromat2.html"></a>
+			<div class="ui green ok inverted button" id="okay"></a>
 				<i class="checkmark icon"></i>
 					OK
 			</div>
@@ -377,9 +385,10 @@
 	</div>
 	<script>
 		$("#okay").click(function() {
-    			window.location.href="index.html";
+    			window.location.href="laundromat2.html";
   		})
 	</script>
+
 	<!--TIME SHOWING-->
 	<script>
 		$('.rapid.example .ui.button')

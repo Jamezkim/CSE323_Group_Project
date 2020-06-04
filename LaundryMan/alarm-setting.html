@@ -299,12 +299,18 @@
 		<div class="container">
 			<div class="row">
 				<div class="ui container" style="border: 1px solid rgba(192, 192, 192, 0.61); padding: 50px; border-radius: 0.5%; margin-bottom: 50px;">
-					<div class="col-md-12" style="margin-bottom: 60px;">
+					<div class="col-md-12" style="margin-bottom: 43px;">
 						<div class="row">
 							<div class="col text-center">
 								<i class="material-icons" style="font-size:60px; color: black; margin-bottom: 20px;">access_alarms</i>
-								<!-- <h3 style="color: black; text-align: center;">Default Alarm: When the laundry is finished</h3> -->
-								<h3 style="color: black;">Default Alarm: When the laundry is finished</h3>
+								<p>Get an alarm when your laundry is finished. Choose additional alarms before or after your laundry is finished.</p>
+								<br><br>
+								<h3 style="color: black;">When the laundry is finished</h3>
+								<button style="margin-top: -2px;" class="button r" id="button-1">
+									<input type="checkbox" class="checkbox" checked>
+									<div class="knobs"></div>
+									<div class="layer"></div>
+								</button>
 							</div>
 						</div>
 					</div>
@@ -346,6 +352,21 @@
 								<div class="slidecontainer" id="slider2" style="display: none;">
 									<input type="range" min="1" max="20" value="0" class="slider" id="myRange2">
 									<p style="color: black;">After <span id="demo2"></span> minutes</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-12" style="margin-bottom: 20px;">
+						<div class="row">
+							<div class="col-md-12" style="margin-bottom: 30px;">
+								<h3 style="color: black; text-align: center;">How should we reminder you?</h3>
+							</div>
+							<div class="col-md-12" style="text-align: center;">
+								<div style="margin-top: -15px;" class="radio">
+									<label><input type="radio" name="optradio" checked>   By Email</label>
+								</div>
+								<div class="radio">
+									<label><input type="radio" name="optradio">   By Text Message</label>
 								</div>
 							</div>
 						</div>

@@ -4,7 +4,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>LaundryMan: Don't wait anymore</title>
+	<title>LaundryMan: Don't wait anymore</title>
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/icon" href="assets/images/favicon.ico"/>
     <!-- Font Awesome -->
@@ -111,7 +112,14 @@
 						</div>
 					</div>
 				  </li>
-				  
+				  <a href="account.html"><i class='far fa-user-circle' style="font-size: 40px; padding-left:15px;">
+				<style>
+					.far.fa-user-circle{
+						color:white;
+					
+					}
+				</style></i></a>
+				   
 				  <!--Notification Message-->
 				  
 			    </ul>
@@ -119,20 +127,110 @@
 			</nav>
 		</div>
 	</header>
-	<div class="sidebar">
-		<a href="#home"> My Account</a>
-		<a href="#services" style="padding-top:19px; padding-bottom:19px">Reservation <br> Status</a>
-		<a href="#clients">History</a>
-		<a href="#contact">Setting</a>
+	
+	<div class="wrapper">
+		<div class="sidebar">
+			
+			<a href="#my-account" id="account-click">My Account</a>
+			<a href="#reservation-status" id="status-click" style="padding-top:19px; padding-bottom:19px">Reservation <br> Status</a>
+			<a href="#history" id="history-click">History</a>
+			<a href="#setting" id="setting-click">Setting</a>
+		</div>
+		<div class="content">
+			<div id="my-account">
+				<div class="week_title">My Account</div>
+				<div class="container" >
+					<div class="row">
+						<div class="column" style="margin-top: 50px; float:left">
+							<div class="infobox" style="margin-bottom:50px">
+								<div class="container" style="margin-top:10px">
+									<h3 style="color: #0091ea;">Info</h3>
+									<div class="row" style="margin-left:0px;">
+										<div class="column">
+											<h5>Name:</h5>
+											<h5 style="margin-top:30px;">ID:</h5>
+											<h5 style="margin-top:30px;">Password:</h5>
+											<h5 style="margin-top:30px;">Phone:</h5>
+											<h5 style="margin-top:30px;">Email:</h5>
+										</div>
+										<div class="column" style="margin-left:100px;">
+											<h5>Kwangmin Kim</h5>
+											<h5 style="margin-top:30px;">kkim1028</h5>
+											<input type="text" disabled="disabled" style="background-color: lightgray; margin-top:16px;">
+											<div class="row" style="margin-left: 0px; margin-top:30px;"><input type="text" disabled="disabled" style="background-color: lightgray;"></div>
+											<input type="text" disabled="disabled" style="background-color: lightgray; margin-top:30px;" >
+										</div>
+									</div>
+									<br>
+									<br>
+									<br>
+									<br>
+							
+
+									
+									<button type="button", id="editPic" style="margin-left:130px; margin-top:22px;">Edit</button>
+								</div>
+							</div>		
+						</div>
+						<div class="column" style="margin-top: 50px; margin-left:auto;">
+							<div class="conatiner">
+								<img class="" src="assets/images/kw2.png" alt="img" style="width:400px; height: 400px">
+								<br>
+								<br>
+								<button type="button", id="editPic" style="margin-left:150px">Edit</button>
+							</div>
+						</div>
+					</div>	
+				</div>
+			</div>
+			<div id="reservation-status">
+				<div class="reservation_title">Reservation Status</div>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				
+
+				<div class="row">
+					<div class="column">
+						<img class="" src="assets/images/laundryM.jpg" alt="img">
+					</div>
+					<duv class="column" style="padding-left:40px">
+						<div class="container">
+							<div class="row">
+								<div style="color:#0091ea; text-decoration: underline; font-size: 2em; margin-top:0.3em;">Kuhn's SUNY Laundromat</div>
+							</div>
+							<div class="row">
+								<div style="color:#0091ea; font-size: 2em; margin-top:2em;">Reservation Time: 10:08AM</div>
+							</div>
+							<div class="row" style="margin-top: 60px;">
+								<button type="button", id="cancel_btn" style="margin-left:150px">Cancel</button>
+							</div>
+						</div>
+						
+
+					</duv>
+					
+				</div>
+			<div id="history">hello3</div>
+			<div id="setting">hello4</div>
+			
+		</div>
 	</div>
+	
 	<main>
+		
 		
 		
 
 
 		
 	</main>
-
+	
 	<style>
 		.ui.mini.modal {
 			height:180px;
