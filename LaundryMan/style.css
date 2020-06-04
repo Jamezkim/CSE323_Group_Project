@@ -379,6 +379,7 @@ a:focus,
 
 .mu-navbar {
 	padding: 20px 0;
+	height: 80px;
 }
 
 .mu-navbar-nav {
