@@ -130,36 +130,46 @@
 		<div class="row">
 			<div class="col text-center">
 				<div class="ui container">
-					<h5 style="text-align: center">Operation Time: 08:00~24:00 AM</h>
+					<h4 style="text-align: center">Operation Time: 08:00~24:00 AM</h4>
 					<p>Date/Time: <span id="datetime"></span></p><script>var dt = new Date();
 							document.getElementById("datetime").innerHTML=dt.toString();</script>
+							<div class="container">
+								<div class="col text-center">
+							<div class="hovereffect2" style="margin-left: 420px;">
+								<img class="img-responsive"  id="ava1" src="assets/images/laundryM.jpg" alt="">
+								<div class="overlay"> <h3>Machine 1 Working</h3> </div>
+							</div></div>
+							<img class="img-responsive"  id="time" src="assets/images/time.png" alt="">
 				</div>
 			</div>
 		</div>	
+	</div>
 	</main>
 	<div class="row">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="inoperation" id= "working">
-					<div class="hovereffect2">
-						<!-- <div class= "ui container" > -->
-						<img class="img-responsive" id="ava1" src="assets/images/laundryM.jpg" alt="">
-					<div class="overlay"> <h3>Machine 1 Working</h3> </div>
+		<div class="col text-center">
+			
+			
+					
+						<div class="inoperation" id= "working" style="text-align: center;">
+							
+								<!-- <div class= "ui container" > -->
+								<!-- <img class="img-responsive" style="text-align: center;" id="ava1" src="assets/images/laundryM.jpg" alt="">
+							<div class="overlay"> <h3>Machine 1 Working</h3> </div> -->
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-
-	<br>
-	<br>
-	<div class="container">
+			<br>
+			<br>
+		<div class="container">
 			
 			<p id="demo"></p>
 
 			<script>
 			// Set the date we're counting down to
-			var countDownDate = new Date("June 4, 2020 15:37:25").getTime();
+			var countDownDate = new Date("June 5, 2020 15:37:25").getTime();
 			
 			// Update the count down every 1 second
 			var x = setInterval(function() {
