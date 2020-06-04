@@ -5,7 +5,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>LaundryMan: Don't wait anymore</title>
+	<title>LaundryMan: Don't wait anymore</title>
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/icon" href="assets/images/favicon.ico"/>
     <!-- Font Awesome -->
@@ -22,7 +23,9 @@
 	<!--Let browser know website is optimized for mobile-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-	
+	<!-- Sending Email -->
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
+
 	<!--Sementic-->
 	<link rel="stylesheet" type="text/css" href="semantic/semantic.css">
     <script
@@ -281,7 +284,13 @@
 						</div>
 					</div>
 				  </li>
-				  
+				  <a href="account.html"><i class='far fa-user-circle' style="font-size: 40px; padding-left:15px;">
+					<style>
+						.far.fa-user-circle{
+							color:white;
+						
+						}
+					</style></i></a>
 				  <!--Notification Message-->
 				  
 			    </ul>
@@ -363,10 +372,10 @@
 							</div>
 							<div class="col-md-12" style="text-align: center;">
 								<div style="margin-top: -15px;" class="radio">
-									<label><input type="radio" name="optradio" checked>   By Email</label>
+									<label><input type="radio" id="radio1" onclick="undisableTxt()" name="optradio">   By Email</label>
 								</div>
 								<div class="radio">
-									<label><input type="radio" name="optradio">   By Text Message</label>
+									<label><input type="radio" id="radio2" onclick="disableTxt()" name="optradio">   By Text Message</label>
 								</div>
 							</div>
 						</div>
@@ -374,7 +383,7 @@
 					<div class="col-md-12">
 						<div class="row">
 							<div class="col-md-12" style="text-align: right;">
-								<button type="button", class="save", id="savehow">Save</button>
+								<button type="button", class="save", id="savehow" onclick="sendEmail()">Save</button>
 							</div>
 						</div>
 					</div>
@@ -601,27 +610,51 @@
 		}
 	</script>
 
-<script>
-	function slidershow() {
-		var x = document.getElementById("slider1");
-		if (x.style.display === "none") {
-			x.style.display = "block";
-		} else {
-			x.style.display = "none";
+	<script>
+		function slidershow() {
+			var x = document.getElementById("slider1");
+			if (x.style.display === "none") {
+				x.style.display = "block";
+			} else {
+				x.style.display = "none";
+			}
 		}
-	}
-</script>
+	</script>
 
-<script>
-	function slidershow2() {
-		var x = document.getElementById("slider2");
-		if (x.style.display === "none") {
-			x.style.display = "block";
-		} else {
-			x.style.display = "none";
+	<script>
+		function slidershow2() {
+			var x = document.getElementById("slider2");
+			if (x.style.display === "none") {
+				x.style.display = "block";
+			} else {
+				x.style.display = "none";
+			}
 		}
-	}
-</script>
+	</script>
+
+	<script>
+		function disableTxt() {
+			document.getElementById("emailaddr").disabled = true;
+		}
+
+		function undisableTxt() {
+			document.getElementById("emailaddr").disabled = false;
+		}
+	</script>
+
+	<script>
+		function sendEmail() {
+			Email.send({
+				Host: "smtp.elasticemail.com",
+				Username : "laundryman.kf90@gmail.com",
+				Password : "8996F4FF5E3954C3ABB3E6A58ED6E2062E83",
+				To : 'kwangmin.kim@stonybrook.edu',
+				From : "laundryman.kf90@gmail.com",
+				Subject : "[LaundryMan] Test Alarm",
+				Body : "This email is to test the alarm notification function.",
+				})
+		}
+	</script>
     
   </body>
 </html>
