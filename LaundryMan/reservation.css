@@ -142,28 +142,30 @@ margin-right: auto;
   .hovereffect2 {
 	animation: shake 1.5s; 
 	animation-iteration-count: infinite;
-	width: auto;
+	width: 200px;
+	/* text-align: center; */
 	height: auto;
-	float: left;
+	float: center;
 	overflow: hidden;
 	position: relative;
 	text-align: center;
 	cursor: default;
 	background: red;
-	border-radius: 23px;
+	border-radius: 25px;
 	
   }
 
   .hovereffect2 h3 {
 	text-transform: uppercase;
 	color: #fff;
+	/* float: left; */
 	text-align: center;
 	position: relative;
 	font-size: 16px;
 	overflow: hidden;
 	padding: 0.5em 0;
 	/* background: red; */
-	background-color: transparent;
+	/* background-color: transparent; */
   }
 
   .hovereffect2:hover img {
@@ -171,7 +173,7 @@ margin-right: auto;
 	filter: alpha(opacity=40);
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
-	background:red; 
+	/* background:red;  */
 	/* animation: shake 0.5s; 
 	animation-iteration-count: infinite; */
 	
@@ -2656,7 +2658,7 @@ a:focus,
 	margin-bottom: 20px;
 	padding: 20px;
 	background-color: #f6f6f6;
-	color: #323232;
+	color: #3232;
 	font-size: 24px;
 }
 
