@@ -5,8 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>LaundryMan: Don't wait anymore</title>
-	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <title>LaundryMan: Don't wait anymore</title>
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/icon" href="assets/images/favicon.ico"/>
     <!-- Font Awesome -->
@@ -67,9 +66,16 @@
 			    <ul class="navbar-nav mr-auto mu-navbar-nav">
 			      <li class="nav-item">
 			        <a href="index.html">Home</a>
-			      </li>
-			      <li class="nav-item active"><a href="laundromat.html">Laundromat</a></li>
-				  <li class="nav-item dropdown">
+				  </li>
+				  <li class="nav-item dropdown active">
+					<a class="dropdown-toggle" href="#" role="button" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Laundromat</a>
+				   <div class="dropdown-menu active" aria-labelledby="navbarDropdown">
+					  <a class="dropdown-item" href="laundromat.html">Reserve</a>
+					  <a class="dropdown-item" href="laundromat2.html">Remaining Time</a>
+					</div>
+				  </li>
+			      <!-- <li class="nav-item"><a href="laundromat.html">Laundromat</a></li> -->
+				  <li class="nav-item dropdown active">
 					<a class="dropdown-toggle" href="#" role="button" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Alarm</a>
 				   <div class="dropdown-menu active" aria-labelledby="navbarDropdown">
 					  <a class="dropdown-item" href="alarm-setting.html">Alarm Setting</a>
@@ -113,13 +119,13 @@
 						</div>
 					</div>
 				  </li>
-				  <a href="account.html"><i class='far fa-user-circle' style="font-size: 40px; padding-left:15px;">
-					<style>
-						.far.fa-user-circle{
-							color:white;
-						
-						}
-					</style></i></a>
+			<a href="account.html"><i class='far fa-user-circle' style="font-size: 40px; padding-left:15px;">
+				<style>
+					.far.fa-user-circle{
+						color:white;
+					
+					}
+		</style></i></a>
 				   
 				  <!-- <!—Notification Message—> -->
 				  
@@ -165,7 +171,7 @@
 				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
 					<div class="hovereffect1">
 						<div class="test">
-						<img class="img-responsive" id="unava1" src="assets/images/laundryM1.jpg" alt="" onclick="reservationx()">
+						<img class="img-responsive" id="unava1" src="assets/images/laundryM.jpg" alt="" onclick="reservationx()">
 					</div>
 						<div class="overlay">
 							<div class="countdown2"></div>
@@ -192,7 +198,7 @@
 				</div>
 				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
 					<div class="hovereffect1">
-						<img class="img-responsive" id="unava2" src="assets/images/laundryM1.jpg" alt="" onclick="reservationx()">
+						<img class="img-responsive" id="unava2" src="assets/images/laundryM.jpg" alt="" onclick="reservationx()">
 						<div class="overlay">
 							<h3>NO.6 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unavailable</h3>
 						</div>
@@ -200,7 +206,7 @@
 				</div>
 				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
 					<div class="hovereffect1">
-						<img class="img-responsive" id="unava3" src="assets/images/laundryM1.jpg" alt="" onclick="reservationx()">
+						<img class="img-responsive" id="unava3" src="assets/images/laundryM.jpg" alt="" onclick="reservationx()">
 						<div class="overlay">
 							<h3>NO.7 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unavailable</h3>	
 						</div>
