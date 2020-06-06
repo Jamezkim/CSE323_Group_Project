@@ -249,7 +249,7 @@
 				  </li>
 				  <li class="nav-item">
 					<div class="ui top right pointing dropdown" id="messageBar"><a href="#">Message</a>
-						<span class="badge">N</span>
+						<span class="badge" id="msgBadge"></span>
 						<div class="menu">
 							<div class="header">
 								<i class="bell icon"></i>
@@ -316,7 +316,7 @@
 								<br><br>
 								<h3 style="color: black;">When the laundry is finished</h3>
 								<button style="margin-top: -2px;" class="button r" id="button-1">
-									<input type="checkbox" class="checkbox" checked>
+									<input type="checkbox" class="checkbox" id="cb1" checked>
 									<div class="knobs"></div>
 									<div class="layer"></div>
 								</button>
@@ -329,7 +329,7 @@
 								<h3 style="color: black; text-align: center;">Before the laundry is finished</h3>
 							</div>
 							<button class="button r" id="button-1">
-								<input onclick="slidershow()" type="checkbox" class="checkbox" checked>
+								<input onclick="slidershow()" type="checkbox" class="checkbox" id="cb2" checked>
 								<div class="knobs"></div>
 								<div class="layer"></div>
 							</button>
@@ -350,7 +350,7 @@
 								<h3 style="color: black; text-align: center;">After the laundry is finished</h3>
 							</div>
 							<button class="button r" id="button-2">
-								<input onclick="slidershow2()" type="checkbox" class="checkbox" checked>
+								<input onclick="slidershow2()" type="checkbox" class="checkbox" id="cb3" checked>
 								<div class="knobs"></div>
 								<div class="layer"></div>
 							</button>
@@ -372,7 +372,7 @@
 							</div>
 							<div class="col-md-12" style="text-align: center;">
 								<div style="margin-top: -15px;" class="radio">
-									<label><input type="radio" id="radio1" onclick="undisableTxt()" name="optradio">   By Email</label>
+									<label><input type="radio" id="radio1" onclick="undisableTxt()" name="optradio" checked>   By Email</label>
 								</div>
 								<div class="radio">
 									<label><input type="radio" id="radio2" onclick="disableTxt()" name="optradio">   By Text Message</label>
@@ -423,7 +423,7 @@
 		  <div class="ui red basic cancel inverted button", id="noModalbtn" style="width: 85px;">
 			<i class="remove icon"></i>No
 		  </div>
-		  <div class="ui green ok inverted button" id="yesModalbtn" style="width: 85px;">
+		  <div class="ui green ok inverted button" id="yesModalbtn2" style="width: 85px;">
 			<i class="checkmark icon"></i>Yes
 		  </div>
 		</div>
@@ -548,7 +548,33 @@
     <script type="text/javascript" src="assets/js/counter.js"></script>
     <!-- Ajax contact form  -->
 	<script type="text/javascript" src="assets/js/app.js"></script>
+	
 
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+	<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-analytics.js"></script>
+	
+	<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-firestore.js"></script>
+	<script>
+		// Your web app's Firebase configuration
+		var firebaseConfig = {
+		  apiKey: "AIzaSyDxV9NBWvRG0Uj9LAyWbqiI7ynMYCZFlHs",
+		  authDomain: "laundryman-90e01.firebaseapp.com",
+		  databaseURL: "https://laundryman-90e01.firebaseio.com",
+		  projectId: "laundryman-90e01",
+		  storageBucket: "laundryman-90e01.appspot.com",
+		  messagingSenderId: "1065622255921",
+		  appId: "1:1065622255921:web:807763ec9251f2ee875810",
+		  measurementId: "G-MF9FWK2CES"
+		};
+		// Initialize Firebase
+		firebase.initializeApp(firebaseConfig);
+		firebase.analytics();
+	</script>
+	
     <!-- Custom js -->
 	<script type="text/javascript" src="assets/js/custom.js"></script>
 	<script src="alarm.js"></script>
@@ -589,13 +615,15 @@
 	</script> -->
 
 	<script>
+		window.test = [];
 		var slider = document.getElementById("myRange");
 		var output = document.getElementById("demo");
 		output.innerHTML = slider.value; // Display the default slider value
-
+		
 		// Update the current slider value (each time you drag the slider handle)
 		slider.oninput = function() {
-		output.innerHTML = this.value;
+			output.innerHTML = this.value;
+			test[0] = this.value;
 		}
 	</script>
 
@@ -603,10 +631,11 @@
 		var slider2 = document.getElementById("myRange2");
 		var output2 = document.getElementById("demo2");
 		output2.innerHTML = slider2.value; // Display the default slider value
-
+		
 		// Update the current slider value (each time you drag the slider handle)
 		slider2.oninput = function() {
-		output2.innerHTML = this.value;
+			output2.innerHTML = this.value;
+			test[1] = this.value;
 		}
 	</script>
 
