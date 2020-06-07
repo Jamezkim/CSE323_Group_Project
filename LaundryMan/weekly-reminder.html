@@ -68,13 +68,7 @@
 			      <li class="nav-item">
 			        <a href="index.html">Home</a>
 			      </li>
-				  <li class="nav-item dropdown">
-					<a class="dropdown-toggle" href="#" role="button" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Laundromat</a>
-				   <div class="dropdown-menu active" aria-labelledby="navbarDropdown">
-					  <a class="dropdown-item" href="laundromat.html">Reserve a Machine</a>
-					  <a class="dropdown-item" href="laundromat2.html">Remaining Time</a>
-					</div>
-					  </li>
+			      <li class="nav-item"><a href="laundromat.html">Laundromat</a></li>
 				  <li class="nav-item dropdown active">
 					<a class="dropdown-toggle" href="#" role="button" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Alarm</a>
 				   <div class="dropdown-menu active" aria-labelledby="navbarDropdown">
@@ -84,7 +78,7 @@
 				  </li>
 				  <li class="nav-item">
 					<div class="ui top right pointing dropdown" id="messageBar"><a href="#">Message</a>
-						<span class="badge">N</span>
+						<span class="badge" id="msgBadge"></span>
 						<div class="menu">
 							<div class="header">
 								<i class="bell icon"></i>
@@ -200,33 +194,33 @@
 							<div class="col text-center">
 								<select class="ui search dropdown">
 									<option value="">Select time</option>
-									<option value="0900">9:00</option>
-									<option value="0930">9:30</option>
-									<option value="1000">10:00</option>
-									<option value="1030">10:30</option>
-									<option value="1100">11:00</option>
-									<option value="1130">11:30</option>
-									<option value="1200">12:00</option>
-									<option value="1230">12:30</option>
-									<option value="1300">13:00</option>
-									<option value="1330">13:30</option>
-									<option value="1400">14:00</option>
-									<option value="1430">14:30</option>
-									<option value="1500">15:00</option>
-									<option value="1530">15:30</option>
-									<option value="1600">16:00</option>
-									<option value="1630">16:30</option>
-									<option value="1700">17:00</option>
-									<option value="1730">17:30</option>
-									<option value="1800">18:00</option>
-									<option value="1830">18:30</option>
-									<option value="1900">19:00</option>
-									<option value="1930">19:30</option>
-									<option value="2000">20:00</option>
-									<option value="2030">20:30</option>
-									<option value="2100">21:00</option>
-									<option value="2130">21:30</option>
-									<option value="2200">22:00</option>
+									<option value="09:00">9:00</option>
+									<option value="09:30">9:30</option>
+									<option value="10:00">10:00</option>
+									<option value="10:30">10:30</option>
+									<option value="11:00">11:00</option>
+									<option value="11:30">11:30</option>
+									<option value="12:00">12:00</option>
+									<option value="12:30">12:30</option>
+									<option value="13:00">13:00</option>
+									<option value="13:30">13:30</option>
+									<option value="14:00">14:00</option>
+									<option value="14:30">14:30</option>
+									<option value="15:00">15:00</option>
+									<option value="15:30">15:30</option>
+									<option value="16:00">16:00</option>
+									<option value="16:30">16:30</option>
+									<option value="17:00">17:00</option>
+									<option value="17:30">17:30</option>
+									<option value="18:00">18:00</option>
+									<option value="18:30">18:30</option>
+									<option value="19:00">19:00</option>
+									<option value="19:30">19:30</option>
+									<option value="20:00">20:00</option>
+									<option value="20:30">20:30</option>
+									<option value="21:00">21:00</option>
+									<option value="21:30">21:30</option>
+									<option value="22:00">22:00</option>
 								</select>
 							</div>
 							<br>
@@ -253,10 +247,10 @@
 							</div>
 							<div class="col text-center">
 								<div class="radio">
-									<label><input type="radio" name="optradio" checked>   By Email</label>
+									<label><input type="radio" name="optradio" checked>&nbsp;By Email</label>
 								  </div>
 								  <div class="radio">
-									<label><input type="radio" name="optradio">   By Text Message</label>
+									<label><input type="radio" name="optradio">&nbsp;By Text Message</label>
 								</div>
 							</div>
 							<button type="button", class="save", id="savehow">Save</button>
@@ -409,13 +403,37 @@
     <!-- Ajax contact form  -->
 	<script type="text/javascript" src="assets/js/app.js"></script>
 
-    <!-- Custom js -->
+    
+	
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+	<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-analytics.js"></script>
+	
+	<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-firestore.js"></script>
+	<script>
+		// Your web app's Firebase configuration
+		var firebaseConfig = {
+		  apiKey: "AIzaSyDxV9NBWvRG0Uj9LAyWbqiI7ynMYCZFlHs",
+		  authDomain: "laundryman-90e01.firebaseapp.com",
+		  databaseURL: "https://laundryman-90e01.firebaseio.com",
+		  projectId: "laundryman-90e01",
+		  storageBucket: "laundryman-90e01.appspot.com",
+		  messagingSenderId: "1065622255921",
+		  appId: "1:1065622255921:web:807763ec9251f2ee875810",
+		  measurementId: "G-MF9FWK2CES"
+		};
+		// Initialize Firebase
+		firebase.initializeApp(firebaseConfig);
+		firebase.analytics();
+	</script>
+
+	<!-- Custom js -->
 	<script type="text/javascript" src="assets/js/custom.js"></script>
 	<script src="alarm.js"></script>
 	<script src="messageModal.js"></script>
-	
-	
-	
 	<!--Just DELETED-->
 	<!-- <script>
 		// First circle
