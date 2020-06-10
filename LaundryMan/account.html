@@ -232,9 +232,18 @@
 				<div class="container">
 					<div class="boxesBox">
 						<div class="column" style="float:left;">
-							<div class="settingBox">
+							<div class="settingBox" id="alarmBox">
 								<div class="container" style="margin-top:10px;">
-									<h3 style="color: #0091ea; text-align:center">Your Alarm</h3>
+									
+									<h3 style="color: #0091ea; text-align:center; margin-left:60px;">Your Alarm
+										<!-- Rounded switch -->
+										<label class="switch" style="float:right">
+											<input type="checkbox" id="toggleMe1" checked>
+											<span class="slider round"></span>
+										</label>
+									</h3>
+
+									
 									<div class="row">
 										<div class="column" style="margin-left:55px;">
 											<h5>Finished:</h5>
@@ -297,9 +306,14 @@
 						</div>
 						
 						<div class="column" style="float:right">
-							<div class="settingBox">
+							<div class="settingBox" id="weeklyBox">
 								<div class="container" style="margin-top:10px;">
-									<h3 style="color: #0091ea; text-align:center">Your Weekly Reminder</h3> 
+									<h3 style="color: #0091ea; text-align:center">Your Weekly Reminder
+										<label class="switch" style="float:right">
+											<input type="checkbox" id="toggleMe2" checked>
+											<span class="slider round"></span>
+										</label></h3>
+									</h3> 
 									<div class="row">
 										<div class="column" style="margin-left:55px;">
 											<h5>Day:</h5>

@@ -98,6 +98,27 @@ $(document).ready(function(){
         items[3].style.display = "block";
         
     })
-
+    $("#toggleMe1").click(function() {
+        if ($("#toggleMe1").is(":checked")) {
+            $("#alarmBox").css("background", "");
+            $("#alarmBox").css("opacity", "1");
+        }
+        else {
+            $("#alarmBox").css("background", "lightgray");
+            $("#alarmBox").css("opacity", "0.6");
+            
+        } 
+    })
+    $("#toggleMe2").click(function() {
+        if ($("#toggleMe2").is(":checked")) {
+            $("#weeklyBox").css("background", "");
+            $("#weeklyBox").css("opacity", "1");
+        }
+        else {
+            $("#weeklyBox").css("background", "lightgray");
+            $("#weeklyBox").css("opacity", "0.6");
+            
+        } 
+    })
     
 });
