@@ -117,6 +117,7 @@ $(document).ready(function(){
     }));
 
     $("#tue").on("click", (function() {
+        
         if (states[1] == true) {
             $(this).css("background-color", "#35B3FA");
             states[1] = false;

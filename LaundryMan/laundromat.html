@@ -5,10 +5,10 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>LaundryMan: Don't wait anymore</title>
-    <!-- Favicon -->
-	<link rel="shortcut icon" type="image/icon" href="assets/images/favicon.ico"/>
+	<title>LaundryMan: Don't wait anymore</title>
 	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/icon" href="assets/images/favicon.ico"/>
     <!-- Font Awesome -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
      <!-- Bootstrap CSS -->
@@ -33,7 +33,7 @@
 		</script>
     <script src="semantic/semantic.js"></script>
     <!-- Main Style -->
-	<link href="reservation.css" rel="stylesheet">
+    <link href="reservation.css" rel="stylesheet">
 	<link href="weekly.css" rel="stylesheet">
 
     <!-- Fonts -->
@@ -52,7 +52,8 @@
     </a>
   <!-- END SCROLL TOP BUTTON -->
   	
-  	<!-- Start Header --><header id="mu-hero">
+  	<!-- Start Header -->
+	<header id="mu-hero">
 		<div class="container" style="margin-top: 12px; margin-bottom: 12px">
 			<nav class="navbar navbar-expand-lg navbar-light mu-navbar">
 				<!-- Text based logo -->
@@ -67,15 +68,14 @@
 			    <ul class="navbar-nav mr-auto mu-navbar-nav">
 			      <li class="nav-item">
 			        <a href="index.html">Home</a>
-				  </li>
-				  <li class="nav-item dropdown active">
+			      </li>
+			      <li class="nav-item dropdown active">
 					<a class="dropdown-toggle" href="#" role="button" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Laundromat</a>
 				   <div class="dropdown-menu active" aria-labelledby="navbarDropdown">
 					  <a class="dropdown-item" href="laundromat.html">Reserve</a>
 					  <a class="dropdown-item" href="laundromat2.html">Remaining Time</a>
 					</div>
-				  </li>
-			      <!-- <li class="nav-item"><a href="laundromat.html">Laundromat</a></li> -->
+				</li>
 				  <li class="nav-item dropdown">
 					<a class="dropdown-toggle" href="#" role="button" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Alarm</a>
 				   <div class="dropdown-menu active" aria-labelledby="navbarDropdown">
@@ -120,15 +120,15 @@
 						</div>
 					</div>
 				  </li>
-			<a href="account.html"><i class='far fa-user-circle' style="font-size: 40px; padding-left:15px;">
-				<style>
-					.far.fa-user-circle{
-						color:white;
-					
-					}
-		</style></i></a>
-				   
-				  <!-- <!—Notification Message—> -->
+				  <a href="account.html"><i class='far fa-user-circle' style="font-size: 40px; padding-left:15px;">
+					<style>
+						.far.fa-user-circle{
+							color:white;
+						
+						}
+					</style></i>
+				  </a>
+				  <!--Notification Message-->
 				  
 			    </ul>
 			  </div>
@@ -136,313 +136,314 @@
 		</div>
 	</header>
 
-	<main>
-<!-- <div id="mu-page-header"> -->
-		<div class="week_title" style="margin-top: 80px;">Check and Reserve</div>
-		<h2 id="center" style="color: #0091ea;">AT: Kuhn's Laundromat</h2>
-		<div class="row">
-			<div class="col text-center">
-				<div class="ui container">
-					<h3 style="text-align: center">Operation Time: 08:00~24:00 AM</h3>
-					<p>Date/Time: <span id="datetime"></span></p><script>var dt = new Date();
-							document.getElementById("datetime").innerHTML=dt.toString();</script>
-				</div>
-			</div>
-		</div>	
-	</main>
-		
-		<div class="container" style="margin-top:30px;" class="col text-center">
-			<div class="row">
-				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-					<div class="hovereffect">
-						<img class="img-responsive" id="ava1" src="assets/images/laundryM.jpg" alt="" onclick="reservation()">
-						<div class="overlay">
-						<h3>NO.1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Available</h3>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-					<div class="hovereffect">
-						<img class="img-responsive" id="ava2" src="assets/images/laundryM.jpg" alt="" onclick="reservation()">
-						<div class="overlay">
-							<h3>NO.2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Available</h3>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-					<div class="hovereffect1">
-						<div class="test">
-						<img class="img-responsive" id="unava1" src="assets/images/laundryM1.jpg" alt="" onclick="reservationx()">
-					</div>
-						<div class="overlay">
-							<div class="countdown2"></div>
-							<h3>NO.3 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unavailable</h3>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-					<div class="hovereffect">
-						<img class="img-responsive" id="ava3" src="assets/images/laundryM.jpg" alt="" onclick="reservation()">
-						<div class="overlay">
-							<h3>NO.4 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Available</h3>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-					<div class="hovereffect">
-						
-						<img class="img-responsive" id="ava4" src="assets/images/laundryM.jpg" alt="" onclick="reservation()">
-						<div class="overlay">
-							<h3>NO.5 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Available</h3>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-					<div class="hovereffect1">
-						<img class="img-responsive" id="unava2" src="assets/images/laundryM1.jpg" alt="" onclick="reservationx()">
-						<div class="overlay">
-							<h3>NO.6 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unavailable</h3>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-					<div class="hovereffect1">
-						<img class="img-responsive" id="unava3" src="assets/images/laundryM1.jpg" alt="" onclick="reservationx()">
-						<div class="overlay">
-							<h3>NO.7 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unavailable</h3>	
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-					<div class="hovereffect">
-						<img class="img-responsive" id="ava4" src="assets/images/laundryM.jpg" alt="" onclick="reservation()">
-						<div class="overlay">
-							<h3>NO.8 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Available</h3>
-						</div>
-					</div>
-				</div>
-			</div>
-			<br>
-			<br>
-
-		</div>
-			
-	<script>
-		function reservation() {
-			
-			document.getElementById("reservation-btn").style.backgroundColor = '#0080ff'; document.getElementById("reservation-btn").style.border = '3px solid black';
-		}
-
-		function reservationx(){
-			document.getElementById("reservation-btn").style.color = "white"; document.getElementById("reservation-btn").style.backgroundColor = "grey";
-			document.getElementById("reservation-btn").style.border = "white";
-		}
-			
-	</script>
-
-	<div class="row" style="margin-bottom: 70px">
-		<div class="col text-center">
-				<button class="button10" id="reservation-btn" >Reserve Now!</button>
-				<!-- <button class="btn info" id="reservation-btn">Reserve</button> -->
-		</div>
-	</div>
+    
+	<!-- End Header -->
+    <main>
+        <!-- <div id="mu-page-header"> -->
+                <div class="week_title" style="margin-top: 80px;">Check and Reserve</div>
+                <h2 id="center" style="color: #0091ea;">AT: Kuhn's Laundromat</h2>
+                <div class="row">
+                    <div class="col text-center">
+                        <div class="ui container">
+                            <h3 style="text-align: center">Operation Time: 08:00~24:00 AM</h3>
+                            <p>Date/Time: <span id="datetime"></span></p><script>var dt = new Date();
+                                    document.getElementById("datetime").innerHTML=dt.toString();</script>
+                        </div>
+                    </div>
+                </div>	
+            </main>
+                
+                <div class="container" style="margin-top:30px;" class="col text-center">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                            <div class="hovereffect">
+                                <img class="img-responsive" id="ava1" src="assets/images/laundryM.jpg" alt="" onclick="reservation()">
+                                <div class="overlay">
+                                <h3>NO.1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Available</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                            <div class="hovereffect">
+                                <img class="img-responsive" id="ava2" src="assets/images/laundryM.jpg" alt="" onclick="reservation()">
+                                <div class="overlay">
+                                    <h3>NO.2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Available</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                            <div class="hovereffect1">
+                                <div class="test">
+                                <img class="img-responsive" id="unava1" src="assets/images/laundryM1.jpg" alt="" onclick="reservationx()">
+                            </div>
+                                <div class="overlay">
+                                    <div class="countdown2"></div>
+                                    <h3>NO.3 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unavailable</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                            <div class="hovereffect">
+                                <img class="img-responsive" id="ava3" src="assets/images/laundryM.jpg" alt="" onclick="reservation()">
+                                <div class="overlay">
+                                    <h3>NO.4 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Available</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                            <div class="hovereffect">
+                                
+                                <img class="img-responsive" id="ava4" src="assets/images/laundryM.jpg" alt="" onclick="reservation()">
+                                <div class="overlay">
+                                    <h3>NO.5 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Available</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                            <div class="hovereffect1">
+                                <img class="img-responsive" id="unava2" src="assets/images/laundryM1.jpg" alt="" onclick="reservationx()">
+                                <div class="overlay">
+                                    <h3>NO.6 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unavailable</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                            <div class="hovereffect1">
+                                <img class="img-responsive" id="unava3" src="assets/images/laundryM1.jpg" alt="" onclick="reservationx()">
+                                <div class="overlay">
+                                    <h3>NO.7 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unavailable</h3>	
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                            <div class="hovereffect">
+                                <img class="img-responsive" id="ava4" src="assets/images/laundryM.jpg" alt="" onclick="reservation()">
+                                <div class="overlay">
+                                    <h3>NO.8 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Available</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+        
+                </div>
+                    
+            <script>
+                function reservation() {
+                    
+                    document.getElementById("reservation-btn").style.backgroundColor = '#0080ff'; document.getElementById("reservation-btn").style.border = '3px solid black';
+                }
+        
+                function reservationx(){
+                    document.getElementById("reservation-btn").style.color = "white"; document.getElementById("reservation-btn").style.backgroundColor = "grey";
+                    document.getElementById("reservation-btn").style.border = "white";
+                }
+                    
+            </script>
+        
+            <div class="row" style="margin-bottom: 70px">
+                <div class="col text-center">
+                        <button class="button10" id="reservation-btn" >Reserve Now!</button>
+                        <!-- <button class="btn info" id="reservation-btn">Reserve</button> -->
+                </div>
+            </div>
+            
+            <script>
+                $("#reservation-btn").click(function() {
+                $('#reserve').modal('show');
+                })
+                $("#confirmation").click(function() {
+                $('#reserve').modal('show');
+                })
+            </script>
+        
+            <div class="ui modal" id="reserve">
+                    <i class="close icon"></i>
+                        <div class="header">
+                              Reservation Rules
+                        </div>
+                        <div class="image content">
+                              <div class="ui medium image">
+                                <img src="assets/images/laundryM.jpg">
+                              </div>
+                          <div class="description">
+                            <div class="ui header"></div>
+                                <p>1. Please do not be late when you reserve <a href="https://www.gravatar.com" target="_blank"></a></p>
+                                <p>2. If you do not show up in 10 mintunes, you will not be allowed to reserve a machine for 3 days </p>
+                                <p>3. Please check your machine before you use</p>
+                                <p>4. Please take your clothings as soon as possible when it is finished</p>
+                                <p>5. Please do not break any machine</p>
+                                
+                              </div>
+                        </div>
+                    <div class="actions">
+                      <div class="ui black deny button">
+                        Go back
+                      </div>
+                    <div class="ui positive right labeled icon button" id="confirmation">
+                        Confirm
+                            <i class="checkmark icon" ></i>
+                    </div>
+                    </div>
+                </div>	
+            <style>
+                .ui.mini.modal {
+                    height: 180px;
+                    position: relative;
+                }	
+                
+                .ui.modal{
+                    height: 415px;
+                    position: relative;
+                }
+            </style>
+        
+        
+            <div class="ui mini test modal" id="messageModal1">
+                <div class="header">
+                  Today
+                </div>
+                <div class="content">
+                  <p>Your laundry is done!</p>
+                </div>
+                <div class="actions">
+                  
+                <button class="ui gray basic button" id="messageClosebtn1">
+                    Close
+                </button>
+                </div>
+            </div>
+            <!-- Message Modal 2 -->
+            <div class="ui mini test modal" id="messageModal2">
+                <div class="header">
+                  Today
+                </div>
+                <div class="content">
+                  <p>Your laundry is your laundry day!</p>
+                </div>
+                <div class="actions">
+                  
+                <button class="ui gray basic button" id="messageClosebtn2">
+                    Close
+                </button>
+                </div>
+            </div>
+            <!-- Message Modal 3-->
+            <div class="ui mini test modal" id="messageModal3">
+                <div class="header">
+                  05/18/2020
+                </div>
+                <div class="content">
+                  <p>Your laundry is done!</p>
+                </div>
+                <div class="actions">
+                  
+                <button class="ui gray basic button" id="messageClosebtn3">
+                    Close
+                </button>
+                </div>
+            </div>
+        
+            <!-- Message Modal 4-->
+            <div class="ui mini test modal" id="messageModal4">
+                <div class="header">
+                  05/18/2020
+                </div>
+                <div class="content">
+                  <p>5 minutes left before your dryer is done!</p>
+                </div>
+                <div class="actions">
+                  
+                <button class="ui gray basic button" id="messageClosebtn4">
+                    Close
+                </button>
+                </div>
+            </div>
+        
+            <!-- Message Modal 5-->
+            <div class="ui mini test modal" id="messageModal5">
+                <div class="header">
+                  05/18/2020
+                </div>
+                <div class="content">
+                  <p>Today is your laundry day!</p>
+                </div>
+                <div class="actions">
+                  
+                <button class="ui gray basic button" id="messageClosebtn5">
+                    Close
+                </button>
+                </div>
+            </div>
+        
+        
+            <div class="ui basic modal", id="confirmModal2">
+                <div class="ui icon header">
+                    <i class="check circle outline icon" style="font-size: 100px"></i>
+                    <div style="font-size:40px">Your reservation is successfully saved!</div>
+                </div>
+                <div class="content">
+                </div>
+                <div class="actions">
+                    <div class="ui green ok inverted button" id="okay"></a>
+                        <i class="checkmark icon"></i>
+                            OK
+                    </div>
+                </div>
+            </div>
+            <script>
+                $("#okay").click(function() {
+                        window.location.href="index.html";
+                  })
+            </script>
+        
+            <!--TIME SHOWING-->
+            <script>
+                $('.rapid.example .ui.button')
+                  .on('click', function() {
+                var
+                  $progress       = $('.rapid.example .ui.progress'),
+                  $button         = $(this),
+                  updateEvent
+            ;
+            // restart to zero
+            clearInterval(window.fakeProgress)
+            $progress.progress('reset');
+             // updates every 10ms until complete
+            window.fakeProgress = setInterval(function() {
+              $progress.progress('increment');
+              $button.text( $progress.progress('get value') );
+              // stop incrementing when complete
+              if($progress.progress('is complete')) {
+                clearInterval(window.fakeProgress)
+              }
+            }, 10);
+          })
+        ;
+            $('.rapid.example .ui.progress')
+            .progress({
+                duration : 200,
+                total    : 200,
+                text     : {
+                active: '{value} of {total} done'
+                }
+            })
+            ;
+            </script>
+        
+            <script>
+                $("#confirmation").click(function() {
+                $('#confirmModal2').modal('show');
+                })
+            </script>
 	
-	<script>
-		$("#reservation-btn").click(function() {
-		$('#reserve').modal('show');
-		})
-		$("#confirmation").click(function() {
-		$('#reserve').modal('show');
-		})
-	</script>
-
-	<div class="ui modal" id="reserve">
-			<i class="close icon"></i>
-				<div class="header">
-			  		Reservation Rules
-				</div>
-				<div class="image content">
-			  		<div class="ui medium image">
-						<img src="assets/images/laundryM.jpg">
-			  		</div>
-			  	<div class="description">
-					<div class="ui header"></div>
-						<p>1. Please do not be late when you reserve <a href="https://www.gravatar.com" target="_blank"></a></p>
-						<p>2. If you do not show up in 10 mintunes, you will not be allowed to use the machine for 30 minutes </p>
-						<p>3. Please check your machine before you use</p>
-						<p>4. Please take your clothings as soon as possible when it is finished</p>
-						<p>5. Please do not break any machine</p>
-						
-			  		</div>
-				</div>
-			<div class="actions">
-			  <div class="ui black deny button">
-				Go back
-			  </div>
-			<div class="ui positive right labeled icon button" id="confirmation">
-				Confirm
-					<i class="checkmark icon" ></i>
-			</div>
-			</div>
-		</div>	
-	<style>
-		.ui.mini.modal {
-			height: 180px;
-			position: relative;
-		}	
-		
-		.ui.modal{
-			height: 415px;
-			position: relative;
-		}
-	</style>
+	<!-- JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
 
-	<div class="ui mini test modal" id="messageModal1">
-		<div class="header">
-		  Today
-		</div>
-		<div class="content">
-		  <p>Your laundry is done!</p>
-		</div>
-		<div class="actions">
-		  
-		<button class="ui gray basic button" id="messageClosebtn1">
-			Close
-		</button>
-		</div>
-	</div>
-	<!-- Message Modal 2 -->
-	<div class="ui mini test modal" id="messageModal2">
-		<div class="header">
-		  Today
-		</div>
-		<div class="content">
-		  <p>Your laundry is your laundry day!</p>
-		</div>
-		<div class="actions">
-		  
-		<button class="ui gray basic button" id="messageClosebtn2">
-			Close
-		</button>
-		</div>
-	</div>
-	<!-- Message Modal 3-->
-	<div class="ui mini test modal" id="messageModal3">
-		<div class="header">
-		  05/18/2020
-		</div>
-		<div class="content">
-		  <p>Your laundry is done!</p>
-		</div>
-		<div class="actions">
-		  
-		<button class="ui gray basic button" id="messageClosebtn3">
-			Close
-		</button>
-		</div>
-	</div>
+	<!--This two line someohw made the dropdown not working-->
 
-	<!-- Message Modal 4-->
-	<div class="ui mini test modal" id="messageModal4">
-		<div class="header">
-		  05/18/2020
-		</div>
-		<div class="content">
-		  <p>5 minutes left before your dryer is done!</p>
-		</div>
-		<div class="actions">
-		  
-		<button class="ui gray basic button" id="messageClosebtn4">
-			Close
-		</button>
-		</div>
-	</div>
-
-	<!-- Message Modal 5-->
-	<div class="ui mini test modal" id="messageModal5">
-		<div class="header">
-		  05/18/2020
-		</div>
-		<div class="content">
-		  <p>Today is your laundry day!</p>
-		</div>
-		<div class="actions">
-		  
-		<button class="ui gray basic button" id="messageClosebtn5">
-			Close
-		</button>
-		</div>
-	</div>
-
-
-	<div class="ui basic modal", id="confirmModal2">
-		<div class="ui icon header">
-			<i class="check circle outline icon" style="font-size: 100px"></i>
-			<div style="font-size:40px">Your reservation is successfully saved!</div>
-		</div>
-		<div class="content">
-		</div>
-		<div class="actions">
-			<div class="ui green ok inverted button" id="okay"></a>
-				<i class="checkmark icon"></i>
-					OK
-			</div>
-		</div>
-	</div>
-	<script>
-		$("#okay").click(function() {
-    			window.location.href="laundromat2.html";
-  		})
-	</script>
-
-	<!--TIME SHOWING-->
-	<script>
-		$('.rapid.example .ui.button')
-  		.on('click', function() {
-    	var
-      	$progress       = $('.rapid.example .ui.progress'),
-      	$button         = $(this),
-      	updateEvent
-    ;
-    // restart to zero
-    clearInterval(window.fakeProgress)
-    $progress.progress('reset');
-     // updates every 10ms until complete
-    window.fakeProgress = setInterval(function() {
-      $progress.progress('increment');
-      $button.text( $progress.progress('get value') );
-      // stop incrementing when complete
-      if($progress.progress('is complete')) {
-        clearInterval(window.fakeProgress)
-      }
-    }, 10);
-  })
-;
-	$('.rapid.example .ui.progress')
-	.progress({
-		duration : 200,
-		total    : 200,
-		text     : {
-		active: '{value} of {total} done'
-		}
-	})
-	;
-	</script>
-
-	<script>
-		$("#confirmation").click(function() {
-		$('#confirmModal2').modal('show');
-		})
-	</script>
-
-	<!-- // JavaScript -->
-	<!-- // jQuery first, then Popper.js, then Bootstrap JS -->
-
-
-	<!-- // This two line someohw made the dropdown not working -->
-
-	</script>
 	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script> -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
@@ -459,44 +460,68 @@
     <!-- Ajax contact form  -->
 	<script type="text/javascript" src="assets/js/app.js"></script>
 
-    <!-- Custom js -->
+    
+	
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+	<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-analytics.js"></script>
+	
+	<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-firestore.js"></script>
+	<script>
+		// Your web app's Firebase configuration
+		var firebaseConfig = {
+		  apiKey: "AIzaSyDxV9NBWvRG0Uj9LAyWbqiI7ynMYCZFlHs",
+		  authDomain: "laundryman-90e01.firebaseapp.com",
+		  databaseURL: "https://laundryman-90e01.firebaseio.com",
+		  projectId: "laundryman-90e01",
+		  storageBucket: "laundryman-90e01.appspot.com",
+		  messagingSenderId: "1065622255921",
+		  appId: "1:1065622255921:web:807763ec9251f2ee875810",
+		  measurementId: "G-MF9FWK2CES"
+		};
+		// Initialize Firebase
+		firebase.initializeApp(firebaseConfig);
+		firebase.analytics();
+	</script>
+
+	<!-- Custom js -->
 	<script type="text/javascript" src="assets/js/custom.js"></script>
 	<script src="alarm.js"></script>
 	<script src="messageModal.js"></script>
-	
-	<script>
-	function countdown( elementName, minutes, seconds )
-	{
-    	var element, endTime, hours, mins, msLeft, time;
+	<!--Just DELETED-->
+	<!-- <script>
+		// First circle
+	    new Circlebar({
+        element : "#circle-1",
+        type : "progress",
+	      maxValue:  "90"
+	    });
+		
+		// Second circle
+	    new Circlebar({
+        element : "#circle-2",
+        type : "progress",
+	      maxValue:  "84"
+	    });
 
-    function twoDigits( n )
-    {
-        return (n <= 9 ? "0" + n : n);
-    }
+	    // Third circle
+	    new Circlebar({
+        element : "#circle-3",
+        type : "progress",
+	      maxValue:  "60"
+	    });
 
-    function updateTimer()
-    {
-        msLeft = endTime - (+new Date);
-        if ( msLeft < 1000 ) {
-            element.innerHTML = "countdown's over!";
-        } else {
-            time = new Date( msLeft );
-            hours = time.getUTCHours();
-            mins = time.getUTCMinutes();
-            element.innerHTML = (hours ? hours + ':' + twoDigits( mins ) : mins) + ':' + twoDigits( time.getUTCSeconds() );
-            setTimeout( updateTimer, time.getUTCMilliseconds() + 500 );
-        }
-    }
+	    // Fourth circle
+	    new Circlebar({
+        element : "#circle-4",
+        type : "progress",
+	      maxValue:  "74"
+	    });
 
-    element = document.getElementById( elementName );
-    endTime = (+new Date) + 1000 * (60*minutes + seconds) + 500;
-    updateTimer();
-}
-
-
-countdown( "countdown2", 50, 0 );
-	</script>
-	
+	</script> -->
     
   </body>
 </html>

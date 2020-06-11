@@ -5,11 +5,11 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>LaundryMan: Don't wait anymore</title>
+	<title>LaundryMan: Don't wait anymore</title>
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/icon" href="assets/images/favicon.ico"/>
-	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
-	<!-- Font Awesome -->
+    <!-- Font Awesome -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
      <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
@@ -33,7 +33,7 @@
 		</script>
     <script src="semantic/semantic.js"></script>
     <!-- Main Style -->
-	<link href="reservation.css" rel="stylesheet">
+    <link href="reservation.css" rel="stylesheet">
 	<link href="weekly.css" rel="stylesheet">
 
     <!-- Fonts -->
@@ -68,16 +68,14 @@
 			    <ul class="navbar-nav mr-auto mu-navbar-nav">
 			      <li class="nav-item">
 			        <a href="index.html">Home</a>
-				  </li>
-				  <li class="nav-item dropdown active">
+			      </li>
+			      <li class="nav-item dropdown active">
 					<a class="dropdown-toggle" href="#" role="button" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Laundromat</a>
 				   <div class="dropdown-menu active" aria-labelledby="navbarDropdown">
 					  <a class="dropdown-item" href="laundromat.html">Reserve</a>
 					  <a class="dropdown-item" href="laundromat2.html">Remaining Time</a>
 					</div>
-				  </li>
-				  <!-- <li class="nav-item  active"><a href="laundromat.html">Laundromat</a></li> -->
-				  
+				</li>
 				  <li class="nav-item dropdown">
 					<a class="dropdown-toggle" href="#" role="button" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Alarm</a>
 				   <div class="dropdown-menu active" aria-labelledby="navbarDropdown">
@@ -128,7 +126,8 @@
 							color:white;
 						
 						}
-			</style></i></a>
+					</style></i>
+				  </a>
 				  <!--Notification Message-->
 				  
 			    </ul>
@@ -136,8 +135,10 @@
 			</nav>
 		</div>
 	</header>
-   </body>
-	<main>
+
+    
+	<!-- End Header -->
+    <main>
 <!-- <div id="mu-page-header"> -->
 	<div class="week_title" style="margin-bottom: 10px;">Remaining Time: </div>
 		<div class="week_title" style="margin-top: 20px;" id="time"></div>
@@ -312,54 +313,13 @@ $('#example1').progress();
 <div class="label" style="text-align: center;"><h3 style="margin-bottom:50px;">1% Completed</h3></div>
 </div>
 
-
-	<!--TIME SHOWING-->
-	<!-- <script>
-		$('.rapid.example .ui.button')
-  		.on('click', function() {
-    	var
-      	$progress       = $('.rapid.example .ui.active.progress'),
-      	$button         = $(this),
-      	updateEvent
-    ;
-    // restart to zero
-    clearInterval(window.fakeProgress)
-    $progress.progress('reset');
-     // updates every 10ms until complete
-    window.fakeProgress = setInterval(function() {
-      $progress.progress('increment');
-      $button.text( $progress.progress('get value') );
-      // stop incrementing when complete
-      if($progress.progress('is complete')) {
-        clearInterval(window.fakeProgress)
-      }
-    }, 10);
-  })
-;
-	$('.rapid.example .ui.progress')
-	.progress({
-		duration : 200,
-		total    : 200,
-		text     : {
-		active: '{value} of {total} done'
-		}
-	})
-	;
-	</script> -->
-
-	<script>
-		$("#confirmation").click(function() {
-		$('#confirmModal2').modal('show');
-		})
-	</script>
-
-	<!-- // JavaScript -->
-	<!-- // jQuery first, then Popper.js, then Bootstrap JS -->
+	
+	<!-- JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
 
-	<!-- // This two line someohw made the dropdown not working -->
+	<!--This two line someohw made the dropdown not working-->
 
-	</script>
 	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script> -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
@@ -376,43 +336,68 @@ $('#example1').progress();
     <!-- Ajax contact form  -->
 	<script type="text/javascript" src="assets/js/app.js"></script>
 
-    <!-- Custom js -->
+    
+	
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+	<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-analytics.js"></script>
+	
+	<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-firestore.js"></script>
+	<script>
+		// Your web app's Firebase configuration
+		var firebaseConfig = {
+		  apiKey: "AIzaSyDxV9NBWvRG0Uj9LAyWbqiI7ynMYCZFlHs",
+		  authDomain: "laundryman-90e01.firebaseapp.com",
+		  databaseURL: "https://laundryman-90e01.firebaseio.com",
+		  projectId: "laundryman-90e01",
+		  storageBucket: "laundryman-90e01.appspot.com",
+		  messagingSenderId: "1065622255921",
+		  appId: "1:1065622255921:web:807763ec9251f2ee875810",
+		  measurementId: "G-MF9FWK2CES"
+		};
+		// Initialize Firebase
+		firebase.initializeApp(firebaseConfig);
+		firebase.analytics();
+	</script>
+
+	<!-- Custom js -->
 	<script type="text/javascript" src="assets/js/custom.js"></script>
 	<script src="alarm.js"></script>
 	<script src="messageModal.js"></script>
-	
-	<script>
-	function countdown( elementName, minutes, seconds )
-	{
-    	var element, endTime, hours, mins, msLeft, time;
+	<!--Just DELETED-->
+	<!-- <script>
+		// First circle
+	    new Circlebar({
+        element : "#circle-1",
+        type : "progress",
+	      maxValue:  "90"
+	    });
+		
+		// Second circle
+	    new Circlebar({
+        element : "#circle-2",
+        type : "progress",
+	      maxValue:  "84"
+	    });
 
-    function twoDigits( n )
-    {
-        return (n <= 9 ? "0" + n : n);
-    }
+	    // Third circle
+	    new Circlebar({
+        element : "#circle-3",
+        type : "progress",
+	      maxValue:  "60"
+	    });
 
-    function updateTimer()
-    {
-        msLeft = endTime - (+new Date);
-        if ( msLeft < 1000 ) {
-            element.innerHTML = "countdown's over!";
-        } else {
-            time = new Date( msLeft );
-            hours = time.getUTCHours();
-            mins = time.getUTCMinutes();
-            element.innerHTML = (hours ? hours + ':' + twoDigits( mins ) : mins) + ':' + twoDigits( time.getUTCSeconds() );
-            setTimeout( updateTimer, time.getUTCMilliseconds() + 500 );
-        }
-    }
+	    // Fourth circle
+	    new Circlebar({
+        element : "#circle-4",
+        type : "progress",
+	      maxValue:  "74"
+	    });
 
-    element = document.getElementById( elementName );
-    endTime = (+new Date) + 1000 * (60*minutes + seconds) + 500;
-    updateTimer();
-}
-
-
-countdown( "countdown2", 50, 0 );
-	</script>
-	
+	</script> -->
     
+  </body>
 </html>

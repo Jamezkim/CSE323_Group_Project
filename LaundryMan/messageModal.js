@@ -2,25 +2,25 @@ $(document).ready(function(){
     var db = firebase.firestore();
     var docRef = db.collection("isClickedMsg").doc("data");
 
-        docRef.get().then(function(doc) {
-            if (doc.exists) {
-                if(doc.data().isClicked == false) {
-                    $("#msgBadge").append("N");
-                }
-            } 
-            else {
-                // doc.data() will be undefined in this case
-                console.log("No such document!");
+    docRef.get().then(function(doc) {
+        if (doc.exists) {
+            if(doc.data().isClicked == false) {
+                $("#msgBadge").append("N");
             }
-        }).catch(function(error) {
-            console.log("Error getting document:", error);
-        });
-    $('.ui.dropdown')
-  .dropdown();
-    $('.ui.pointing.dropdown')
-    .dropdown({
-        action: 'nothing'
+        } 
+        else {
+            // doc.data() will be undefined in this case
+            console.log("No such document!");
+        }
+    }).catch(function(error) {
+        console.log("Error getting document:", error);
     });
+    $('.ui.dropdown')
+        .dropdown();
+    $('.ui.pointing.dropdown')
+        .dropdown({
+            action: 'nothing'
+        });
     $('.message .close').on('click', function() {
         $(this).closest('.message').transition('fade');
     });
